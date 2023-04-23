@@ -1,11 +1,11 @@
-import Nav from "./components/nav/Nav";
-import Main from "./components/main/Main.js";
+import React, { useState, useEffect } from "react";
+import Main from "./components/Main.js";
+import Layout from "./components/Layout.js";
 
 export default function Home() {
   return (
-    <main className="">
-      <Nav />
+    <Layout>
       <Main />
-    </main>
+    </Layout>
   );
 }
