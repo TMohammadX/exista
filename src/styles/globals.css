@@ -27,3 +27,7 @@ html {
 .box {
   min-width: 100px;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}

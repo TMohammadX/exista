@@ -23,6 +23,15 @@ module.exports = {
         5: "url(/img/5.jpg)",
         6: "url(/img/6.jpg)",
       },
+      keyframes: {
+        transition: {
+          "0%, 50%": { transfrom: "translateY(100%)" },
+          "100%": { transfrom: "translateY(200%)" },
+        },
+      },
+      animation: {
+        transition: "transition 2s ease-in-out",
+      },
     },
   },
 
