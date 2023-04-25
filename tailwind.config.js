@@ -32,6 +32,9 @@ module.exports = {
       animation: {
         transition: "transition 2s ease-in-out",
       },
+      height: {
+        "2screen": "200vh",
+      },
     },
   },
 

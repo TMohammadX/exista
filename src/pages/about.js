@@ -3,11 +3,9 @@ import { AnimatePresence } from "framer-motion";
 
 export default function () {
   return (
-    <div>
-      <AnimatePresence>
-        <Layout />
-        <h1>about</h1>
-      </AnimatePresence>
+    <div className="grid w-screen h-screen place-items-center">
+      <Layout title="About" />
+      <h1>about</h1>
     </div>
   );
 }

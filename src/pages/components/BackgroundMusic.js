@@ -24,7 +24,7 @@ const BackgroundMusic = () => {
   };
 
   return (
-    <div className="absolute bottom-8 left-16">
+    <div className="fixed bottom-8 left-16">
       {/* Mute button */}
       <button
         onClick={handleMuteToggle}
