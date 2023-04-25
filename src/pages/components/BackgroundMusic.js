@@ -1,22 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { VscMute, VscUnmute } from "react-icons/vsc";
 
 const BackgroundMusic = () => {
-  const [isMuted, setIsMuted] = useState(false); // State to keep track of mute status
+  const [isMuted, setIsMuted] = useState(true); // Set initial state to muted
+  const audioRef = useRef(null); // Create a ref to store the audio element
 
   useEffect(() => {
-    const audio = new Audio("/audio/bgm.mp3"); // Replace with the path to your music file
-    audio.loop = true; // Set to true if you want the music to loop
-    if (!isMuted) {
-      // Play the music only if not muted
-      audio.play();
-    }
+    audioRef.current = new Audio("/audio/bgm.mp3"); // Replace with the path to your music file
+    audioRef.current.loop = true; // Set to true if you want the music to loop
+  }, []); // Run this effect only once on mount
 
-    // Clean up the audio when the component unmounts
-    return () => {
-      audio.pause();
-      audio.currentTime = 0;
-    };
+  useEffect(() => {
+    if (audioRef.current) {
+      if (!isMuted) {
+        // Play the music only if not muted
+        audioRef.current.play();
+      } else {
+        audioRef.current.pause();
+      }
+    }
   }, [isMuted]); // Add isMuted as a dependency to trigger effect when it changes
 
   const handleMuteToggle = () => {
