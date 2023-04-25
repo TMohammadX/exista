@@ -31,36 +31,84 @@ export default function Home() {
             href="/"
             className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box"
           >
+            <video
+              className="object-cover w-full h-full grayscale hover:grayscale-0"
+              autoPlay={true}
+              loop
+              muted
+            >
+              <source src="/video/ppp.mp4"></source>
+            </video>
             <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
             className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-2 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
           >
+            <video
+              className="object-cover w-full h-full grayscale hover:grayscale-0"
+              autoPlay={true}
+              loop
+              muted
+            >
+              <source src="/video/ppp.mp4"></source>
+            </video>
             <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
             className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-3 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
           >
+            <video
+              className="object-cover w-full h-full grayscale hover:grayscale-0"
+              autoPlay={true}
+              loop
+              muted
+            >
+              <source src="/video/ppp.mp4"></source>
+            </video>
             <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
             className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-4 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
           >
+            <video
+              className="object-cover w-full h-full grayscale hover:grayscale-0"
+              autoPlay={true}
+              loop
+              muted
+            >
+              <source src="/video/ppp.mp4"></source>
+            </video>
             <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
             className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-5 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
           >
+            <video
+              className="object-cover w-full h-full grayscale hover:grayscale-0"
+              autoPlay={true}
+              loop
+              muted
+            >
+              <source src="/video/ppp.mp4"></source>
+            </video>
             <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
             className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-6 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
           >
+            <video
+              className="object-cover w-full h-full grayscale hover:grayscale-0"
+              autoPlay={true}
+              loop
+              muted
+            >
+              <source src="/video/ppp.mp4"></source>
+            </video>
             <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
           </Link>
         </div>

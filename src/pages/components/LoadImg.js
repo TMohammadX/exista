@@ -29,10 +29,11 @@ export default function () {
         >
           <video
             className="object-cover w-full h-full grayscale"
-            autoPlay={true}
+            autoPlay
+            muted
             loop
           >
-            <source src="/video/ppp.mp4" autoPlay={true} loop></source>
+            <source src="/video/ppp.mp4"></source>
           </video>
         </motion.div>
       )}
