@@ -4,7 +4,7 @@ import { useRouter } from "next/router.js";
 import LoadImg from "./components/LoadImg.js";
 import Layout from "./components/Layout";
 
-import GlobalStateContext from "./components/GlobalState.js";
+import GlobalStateContext from "./components/globalState.js";
 
 export default function Home() {
   const router = useRouter();
