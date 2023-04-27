@@ -33,12 +33,34 @@ export default function () {
   return (
     <>
       <div ref={el}>
-        <div
-          id="smooth-content"
-          className="grid w-screen h-2screen place-items-center"
-        >
+        <div id="smooth-content" className="w-screen h-4screen">
           <Layout title="About" />
-          <h1>about</h1>
+          <div className="relative grid w-screen h-screen font-Aboreto">
+            <div className="absolute w-screen -translate-y-1/2 -translate-x-1/3 left-1/2 top-2/4">
+              <h2 className="text-sm italic font-semibold tracking-widest text-gray-600 mb-14">
+                ABOUT ME
+              </h2>
+              <h1 className="w-4/6 text-4xl font-semibold">
+                I'm a <b className="italic font-black">selectively skilled</b>{" "}
+                product designer with strong focus on producing high quality &
+                impactful digital experience.
+              </h1>
+            </div>
+          </div>
+          <div className="w-screen h-screen place-items-center font-Aboreto">
+            <div className="flex items-center justify-between w-screen px-56 border border-b-0 border-black border-solid border-t-1 h-1/5">
+              <h1 className="text-3xl font-semibold">DESIGN</h1>
+              <h1 className="text-sm font-semibold">DESIGN desc</h1>
+            </div>
+            <div className="flex items-center justify-between w-screen px-56 border border-b-0 border-black border-solid h-1/5">
+              <h1 className="text-3xl font-semibold">FRONTEND</h1>
+              <h1 className="text-sm font-semibold">DESIGN desc</h1>
+            </div>
+            <div className="flex items-center justify-between w-screen px-56 border border-black border-solid border-b-1 h-1/5">
+              <h1 className="text-3xl font-semibold">BACKEND</h1>
+              <h1 className="text-sm font-semibold">DESIGN desc</h1>
+            </div>
+          </div>
         </div>
       </div>
     </>

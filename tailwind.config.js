@@ -22,6 +22,7 @@ module.exports = {
         4: "url(/img/4.jpg)",
         5: "url(/img/5.jpg)",
         6: "url(/img/6.jpg)",
+        7: "url(/img/sss.png)",
       },
       keyframes: {
         transition: {
@@ -34,6 +35,20 @@ module.exports = {
       },
       height: {
         "2screen": "200vh",
+        "4screen": "400vh",
+      },
+      width: {
+        "10%": "10%",
+      },
+      colors: {
+        bwhite: "#F8F8FF",
+      },
+      backgroundPosition: {
+        "10%": "20%",
+        "20%": "40%",
+        "30%": "60%",
+        "40%": "80%",
+        "50%": "100%",
       },
     },
   },

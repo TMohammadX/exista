@@ -51,7 +51,7 @@ export default function Home() {
   }, [isFirstMount]);
 
   return (
-    <div className="grid w-screen h-screen overflow-hidden place-items-center font-Aboreto">
+    <div className="grid w-screen h-screen overflow-hidden place-items-center font-Aboreto bg-bwhite">
       {loading ? (
         <LoadImg />
       ) : (
@@ -61,87 +61,87 @@ export default function Home() {
         >
           <Link
             href="/"
-            className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box"
+            className="relative w-10% transition-all duration-300 bg-left bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box"
           >
-            <video
-              className="object-cover w-full h-full grayscale hover:grayscale-0"
+            {/*} <video
+              className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
               autoPlay={true}
               loop
               muted
             >
               <source src="/video/ppp.mp4"></source>
-            </video>
-            <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
+      </video>*/}
+            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-2 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="relative w-10% transition-all duration-300 bg-10% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box "
           >
-            <video
-              className="object-cover w-full h-full grayscale hover:grayscale-0"
+            {/*} <video
+              className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
               autoPlay={true}
               loop
               muted
             >
               <source src="/video/ppp.mp4"></source>
-            </video>
-            <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
+      </video>*/}
+            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-3 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="relative w-10% transition-all duration-300 bg-20% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box "
           >
-            <video
-              className="object-cover w-full h-full grayscale hover:grayscale-0"
+            {/*} <video
+              className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
               autoPlay={true}
               loop
               muted
             >
               <source src="/video/ppp.mp4"></source>
-            </video>
-            <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
+      </video>*/}
+            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-4 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="relative w-10% transition-all duration-300 bg-30% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box "
           >
-            <video
-              className="object-cover w-full h-full grayscale hover:grayscale-0"
+            {/*} <video
+              className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
               autoPlay={true}
               loop
               muted
             >
               <source src="/video/ppp.mp4"></source>
-            </video>
-            <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
+      </video>*/}
+            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-5 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="relative w-10% transition-all duration-300 bg-40% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box "
           >
-            <video
-              className="object-cover w-full h-full grayscale hover:grayscale-0"
+            {/*} <video
+              className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
               autoPlay={true}
               loop
               muted
             >
               <source src="/video/ppp.mp4"></source>
-            </video>
-            <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
+      </video>*/}
+            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="relative w-1/12 transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-6 hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="relative w-10% transition-all duration-300 bg-50% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box "
           >
-            <video
-              className="object-cover w-full h-full grayscale hover:grayscale-0"
+            {/*} <video
+              className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
               autoPlay={true}
               loop
               muted
             >
               <source src="/video/ppp.mp4"></source>
-            </video>
-            <span className="absolute w-px h-full mt-5 bg-stone-400 left-1/2 top-full"></span>
+      </video>*/}
+            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
           </Link>
         </div>
       )}
