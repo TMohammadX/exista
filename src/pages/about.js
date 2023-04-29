@@ -1,9 +1,51 @@
 import { useRef, useLayoutEffect, useState } from "react";
 import Layout from "./components/Layout";
+import { motion, useSpring, useMotionValue } from "framer-motion";
+import TestimonialCarousel from "./components/TestimonialCarousel";
+import Footer from "./components/Footer";
+
+function ImageHover({ src, text, desc }) {
+  const [isHovered, setIsHovered] = useState(false);
+  const [mouseX, setMouseX] = useState(0);
+
+  function handleMouseMove(event) {
+    setMouseX(event.clientX);
+  }
+
+  return (
+    <div
+      className="relative flex items-center justify-between w-screen px-56 border border-b-0 border-black border-solid border-t-1 h-1/5 child"
+      onMouseMove={handleMouseMove}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <h1 className="text-3xl font-semibold">{text}</h1>
+      <h1 className="text-sm font-semibold">{desc}</h1>
+      {isHovered && (
+        <motion.img
+          src={src}
+          alt="Image"
+          className="fixed z-20 pointer-events-none h-80 w-96"
+          style={{ top: "33.7%", left: mouseX, transform: "translateY(-50%)" }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
+          transition={{ duration: 0.3 }}
+        />
+      )}
+    </div>
+  );
+}
 
 export default function () {
   const el = useRef();
   const [isReady, setIsReady] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [mouseX, setMouseX] = useState(0);
+
+  function handleMouseMove(event) {
+    setMouseX(event.clientX);
+  }
 
   useLayoutEffect(() => {
     const loadGsap = async () => {
@@ -33,9 +75,9 @@ export default function () {
   return (
     <>
       <div ref={el}>
-        <div id="smooth-content" className="w-screen h-4screen">
+        <div id="smooth-content" className="w-screen h-3screen">
           <Layout title="About" />
-          <div className="relative grid w-screen h-screen font-Aboreto">
+          <section className="relative grid w-screen h-screen font-Aboreto">
             <div className="absolute w-screen -translate-y-1/2 -translate-x-1/3 left-1/2 top-2/4">
               <h2 className="text-sm italic font-semibold tracking-widest text-gray-600 mb-14">
                 ABOUT ME
@@ -46,21 +88,26 @@ export default function () {
                 impactful digital experience.
               </h1>
             </div>
-          </div>
-          <div className="w-screen h-screen place-items-center font-Aboreto">
-            <div className="flex items-center justify-between w-screen px-56 border border-b-0 border-black border-solid border-t-1 h-1/5">
-              <h1 className="text-3xl font-semibold">DESIGN</h1>
-              <h1 className="text-sm font-semibold">DESIGN desc</h1>
-            </div>
-            <div className="flex items-center justify-between w-screen px-56 border border-b-0 border-black border-solid h-1/5">
-              <h1 className="text-3xl font-semibold">FRONTEND</h1>
-              <h1 className="text-sm font-semibold">DESIGN desc</h1>
-            </div>
-            <div className="flex items-center justify-between w-screen px-56 border border-black border-solid border-b-1 h-1/5">
-              <h1 className="text-3xl font-semibold">BACKEND</h1>
-              <h1 className="text-sm font-semibold">DESIGN desc</h1>
-            </div>
-          </div>
+          </section>
+          <section className="relative w-screen h-90% place-items-center font-Aboreto ">
+            <ImageHover
+              src="/img/1.jpg"
+              text="DESIGN"
+              desc="DESIGN DESCRIPTION"
+            />
+            <ImageHover
+              src="/img/2.jpg"
+              text="FRONTEND"
+              desc="DESIGN DESCRIPTION"
+            />
+            <ImageHover
+              src="/img/3.jpg"
+              text="BACKEND"
+              desc="DESIGN DESCRIPTION"
+            />
+          </section>
+          <TestimonialCarousel />
+          <Footer />
         </div>
       </div>
     </>

@@ -70,6 +70,70 @@ html {
   width: 50px;
 }
 
+.child:nth-child(3) {
+  border-bottom: 1px solid black !important;
+}
+
+/*contact */
+.contact {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  font-family: "Aboreto", cursive;
+}
+
+.input-con {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inp {
+  background-color: transparent;
+  border: 1px solid black;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.input-4 {
+  height: 50vh;
+  width: 30vw;
+  resize: none;
+  padding: 3%;
+  color: black;
+  outline: none;
+}
+
+.input-1 {
+  height: 9vh;
+  width: 20vw;
+  padding: 1rem;
+}
+
+.input-2 {
+  height: 9vh;
+  width: 20vw;
+  padding: 1rem;
+}
+
+.input-3 {
+  height: 9vh;
+  width: 20vw;
+  padding: 1rem;
+}
+
+.contact-submit {
+  height: 10vh;
+  width: 15vw;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 1px;
+}
+
 @media (max-width: 1000px) {
   .cursor {
     display: none;

@@ -1,5 +1,6 @@
 import { useRef, useLayoutEffect, useState } from "react";
 import Layout from "./components/Layout";
+import Footer from "./components/Footer";
 
 export default function () {
   const el = useRef();
@@ -33,12 +34,34 @@ export default function () {
   return (
     <>
       <div ref={el}>
-        <div
-          id="smooth-content"
-          className="grid w-screen h-2screen place-items-center"
-        >
-          <Layout title="About" />
-          <h1>contact</h1>
+        <div id="smooth-content" className="h-5screen">
+          <Layout />
+          <section className="contact">
+            <h2 className="self-end text-sm italic font-semibold tracking-widest text-gray-600 justify-self-start pl-80 ">
+              CONTACT ME
+            </h2>
+            <div className="input-con">
+              <textarea
+                className="input-4 inp"
+                placeholder="MESSAGE"
+              ></textarea>
+              <div className="grid h-10% gap-3">
+                <input type="text" className="input-1 inp" placeholder="NAME" />
+                <input
+                  type="text"
+                  className="input-2 inp"
+                  placeholder="EMAIL"
+                />
+                <input
+                  type="text"
+                  className="input-3 inp"
+                  placeholder="BUDGET"
+                />
+                <button className="contact-submit">SUBMIT</button>
+              </div>
+            </div>
+          </section>
+          <Footer />
         </div>
       </div>
     </>
