@@ -8,6 +8,7 @@ const BackgroundMusic = () => {
   useEffect(() => {
     audioRef.current = new Audio("/audio/bgm.mp3"); // Replace with the path to your music file
     audioRef.current.loop = true; // Set to true if you want the music to loop
+    audioRef.current.volume = 0.2; // Set the volume to 50%
   }, []); // Run this effect only once on mount
 
   useEffect(() => {
@@ -26,11 +27,11 @@ const BackgroundMusic = () => {
   };
 
   return (
-    <div className="fixed bottom-8 left-16">
+    <div className="">
       {/* Mute button */}
       <button
         onClick={handleMuteToggle}
-        className="grid text-white bg-black rounded-full place-items-center w-14 h-14"
+        className="fixed grid text-white bg-black rounded-full bottom-8 left-16 place-items-center w-14 h-14"
       >
         {isMuted ? <VscMute /> : <VscUnmute />}
       </button>

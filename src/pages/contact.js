@@ -34,7 +34,7 @@ export default function () {
   return (
     <>
       <div ref={el}>
-        <div id="smooth-content" className="h-5screen">
+        <div id="smooth-content" className="h-[calc(100vh+50vh)]">
           <Layout />
           <section className="contact">
             <h2 className="self-end text-sm italic font-semibold tracking-widest text-gray-600 justify-self-start pl-80 ">

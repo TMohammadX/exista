@@ -61,7 +61,7 @@ export default function Home() {
         >
           <Link
             href="/"
-            className="relative w-10% transition-all duration-300 bg-left bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box"
+            className="relative w-10% transition-all duration-300 bg-left bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 hover:bg-3 box"
           >
             {/*} <video
               className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
@@ -71,11 +71,11 @@ export default function Home() {
             >
               <source src="/video/ppp.mp4"></source>
       </video>*/}
-            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
+            <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="relative w-10% transition-all duration-300 bg-10% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box "
+            className="relative w-10% transition-all duration-300 bg-10% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 hover:bg-3 box "
           >
             {/*} <video
               className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
@@ -85,11 +85,11 @@ export default function Home() {
             >
               <source src="/video/ppp.mp4"></source>
       </video>*/}
-            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
+            <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="relative w-10% transition-all duration-300 bg-20% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box "
+            className="relative w-10% transition-all duration-300 bg-20% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 hover:bg-3 box "
           >
             {/*} <video
               className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
@@ -99,11 +99,11 @@ export default function Home() {
             >
               <source src="/video/ppp.mp4"></source>
       </video>*/}
-            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
+            <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="relative w-10% transition-all duration-300 bg-30% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box "
+            className="relative w-10% transition-all duration-300 bg-30% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 hover:bg-3 box "
           >
             {/*} <video
               className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
@@ -113,11 +113,11 @@ export default function Home() {
             >
               <source src="/video/ppp.mp4"></source>
       </video>*/}
-            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
+            <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="relative w-10% transition-all duration-300 bg-40% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box "
+            className="relative w-10% transition-all duration-300 bg-40% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 hover:bg-3 box "
           >
             {/*} <video
               className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
@@ -127,11 +127,11 @@ export default function Home() {
             >
               <source src="/video/ppp.mp4"></source>
       </video>*/}
-            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
+            <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="relative w-10% transition-all duration-300 bg-50% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 box "
+            className="relative w-10% transition-all duration-300 bg-50% bg-cover cursor-pointer h-3/5 bg-1 hover:w-1/3 hover:h-2/5  hover:grayscale-0 hover:bg-3 box "
           >
             {/*} <video
               className="object-cover w-full h-full bg-right grayscale hover:grayscale-0"
@@ -141,7 +141,7 @@ export default function Home() {
             >
               <source src="/video/ppp.mp4"></source>
       </video>*/}
-            <span className="absolute w-px h-full mt-5 bg-gray-300 left-1/2 top-full"></span>
+            <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
         </div>
       )}

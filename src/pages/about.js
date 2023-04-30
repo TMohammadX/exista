@@ -14,7 +14,7 @@ function ImageHover({ src, text, desc }) {
 
   return (
     <div
-      className="relative flex items-center justify-between w-screen px-56 border border-b-0 border-black border-solid border-t-1 h-1/5 child"
+      className="relative flex items-center justify-between w-screen border border-b-0 border-black border-solid px-36 border-t-1 h-1/5 child"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -25,8 +25,8 @@ function ImageHover({ src, text, desc }) {
         <motion.img
           src={src}
           alt="Image"
-          className="fixed z-20 pointer-events-none h-80 w-96"
-          style={{ top: "33.7%", left: mouseX, transform: "translateY(-50%)" }}
+          className="fixed z-20 pointer-events-none h-50% w-30%"
+          style={{ top: "30.9%", left: mouseX, transform: "translateY(-50%)" }}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
@@ -75,35 +75,32 @@ export default function () {
   return (
     <>
       <div ref={el}>
-        <div id="smooth-content" className="w-screen h-3screen">
+        <div id="smooth-content" className="w-screen h-[calc(300vh+30vh)] ">
           <Layout title="About" />
           <section className="relative grid w-screen h-screen font-Aboreto">
-            <div className="absolute w-screen -translate-y-1/2 -translate-x-1/3 left-1/2 top-2/4">
-              <h2 className="text-sm italic font-semibold tracking-widest text-gray-600 mb-14">
-                ABOUT ME
-              </h2>
-              <h1 className="w-4/6 text-4xl font-semibold">
-                I'm a <b className="italic font-black">selectively skilled</b>{" "}
-                product designer with strong focus on producing high quality &
-                impactful digital experience.
+            <div className="grid w-screen h-screen place-items-center">
+              <h1 className="z-10 w-3/6 font-semibold leading-tight text-center text-2">
+                I'm a <b className="italic font-black">Highly proficient</b>{" "}
+                frontend developer with strong focus on producing high quality &
+                impactful digital experiences.
               </h1>
+              {/*     <img
+                className="absolute h-35% left-5% top-20% z-0"
+                src="/img/4.jpg"
+              />
+              <img
+                className="absolute h-35% right-5% bottom-20% z-0"
+                src="/img/3.jpg"
+  />*/}
             </div>
           </section>
           <section className="relative w-screen h-90% place-items-center font-Aboreto ">
-            <ImageHover
-              src="/img/1.jpg"
-              text="DESIGN"
-              desc="DESIGN DESCRIPTION"
-            />
-            <ImageHover
-              src="/img/2.jpg"
-              text="FRONTEND"
-              desc="DESIGN DESCRIPTION"
-            />
+            <ImageHover src="/img/1.jpg" text="DESIGN" desc="SEAMLESS DESIGN" />
+            <ImageHover src="/img/2.jpg" text="FRONTEND" desc="SMOOTH UI/UX" />
             <ImageHover
               src="/img/3.jpg"
               text="BACKEND"
-              desc="DESIGN DESCRIPTION"
+              desc="SAFE TRANSACTIONS"
             />
           </section>
           <TestimonialCarousel />
