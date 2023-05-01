@@ -14,7 +14,7 @@ function ImageHover({ src, text, desc }) {
 
   return (
     <div
-      className="relative flex items-center justify-between w-screen border border-b-0 border-black border-solid px-36 border-t-1 h-1/5 child"
+      className="relative flex items-center justify-between w-screen border border-b-0 border-l-0 border-r-0 border-black border-solid px-36 border-t-1 h-1/5 child"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

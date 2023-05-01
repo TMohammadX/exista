@@ -47,7 +47,7 @@ const TestimonialCarousel = () => {
     return testimonials.map((_, index) => (
       <div
         key={index}
-        className={`w-1 h-10 mx-1 rounded-full ${
+        className={`w-2 h-2 mx-1 rounded-full ${
           index === current ? "bg-black" : "bg-gray-400"
         }`}
       ></div>
@@ -55,33 +55,34 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="relative w-screen h-90% font-Aboreto -mt-20 mb-16">
-      <h2 className="absolute pl-56 text-sm italic font-semibold tracking-widest text-gray-600 top-16 ">
-        WHAT OTHERS SAY
-      </h2>
+    <div className="relative w-screen h-screen mb-16 -mt-20 font-Aboreto">
       <AnimatePresence>
         {testimonials.map((testimonial, index) => {
           if (index !== current) return null;
 
           return (
-            <motion.div
-              key={testimonial.id}
-              initial={{ y: 30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -30, opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              className="absolute w-full pl-56 top-1/3"
-            >
-              <p className="text-xl font-semibold">{testimonial.name}</p>
-              <p className="w-7/12 mt-10 font-semibold text-gray-500">
-                {testimonial.text}
-              </p>
-            </motion.div>
+            <div className="grid h-90% place-items-center">
+              <motion.div
+                key={testimonial.id}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className=" grid w-full h-50% place-items-center"
+              >
+                <p className="text-xl font-semibold text-center">
+                  {testimonial.name}
+                </p>
+                <p className="w-7/12 mt-10 font-semibold text-center text-black text-[1.3vw]">
+                  {testimonial.text}
+                </p>
+              </motion.div>
+            </div>
           );
         })}
       </AnimatePresence>
 
-      <div className="absolute grid mb-4 -translate-y-1/2 top-1/2 right-52">
+      <div className="absolute flex mb-4 -translate-x-1/2 left-1/2 top-3/4">
         {renderCircles()}
       </div>
     </div>
