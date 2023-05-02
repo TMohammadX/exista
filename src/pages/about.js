@@ -22,10 +22,10 @@ function ImageHover({ src, text, desc }) {
       <h1 className="text-3xl font-semibold">{text}</h1>
       <h1 className="text-sm font-semibold">{desc}</h1>
       {isHovered && (
-        <motion.img
+        <motion.div
           src={src}
           alt="Image"
-          className="fixed z-20 pointer-events-none h-50% w-30%"
+          className="fixed z-20 pointer-events-none h-50% w-30% bg-black"
           style={{ top: "30.9%", left: mouseX, transform: "translateY(-50%)" }}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -75,7 +75,10 @@ export default function () {
   return (
     <>
       <div ref={el}>
-        <div id="smooth-content" className="w-screen h-[calc(300vh+30vh)] ">
+        <div
+          id="smooth-content"
+          className="relative w-screen h-[calc(300vh+30vh)] "
+        >
           <Layout title="About" />
           <section className="relative grid w-screen h-screen font-Aboreto">
             <div className="grid w-screen h-screen place-items-center">
