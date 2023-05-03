@@ -9,7 +9,7 @@ import Link from "next/link";
 import { useRouter } from "next/router.js";
 import LoadImg from "./components/LoadImg.js";
 import Layout from "./components/Layout";
-import GlobalStateContext from "./components/globalState.js";
+import GlobalStateContext from "./contexts/globalState.js";
 
 export default function Home() {
   const router = useRouter();
@@ -40,6 +40,11 @@ export default function Home() {
 
     loadGsap();
   }, []);
+
+  if (!GlobalStateContext) {
+    // Handle the case when the context value is not available
+    return null;
+  }
 
   useEffect(() => {
     if (router.pathname === "/" && isFirstMount) {
