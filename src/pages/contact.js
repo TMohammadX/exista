@@ -1,6 +1,7 @@
 import { useRef, useLayoutEffect, useState } from "react";
 import Layout from "./components/Layout";
 import Footer from "./components/Footer";
+import Circle from "./components/Circle";
 
 export default function () {
   const el = useRef();
@@ -36,7 +37,9 @@ export default function () {
       <div ref={el}>
         <div id="smooth-content" className="h-[calc(100vh+50vh)]">
           <Layout />
-          <section className="contact"></section>
+          <section className="contact">
+            <Circle />
+          </section>
           <Footer />
         </div>
       </div>
