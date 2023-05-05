@@ -1,4 +1,4 @@
-import { useRef, useLayoutEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import Layout from "./components/Layout";
 import Footer from "./components/Footer";
 import Circle from "./components/Circle";
@@ -7,7 +7,7 @@ export default function () {
   const el = useRef();
   const [isReady, setIsReady] = useState(false);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const loadGsap = async () => {
       const { gsap } = await import("gsap");
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
@@ -35,11 +35,9 @@ export default function () {
   return (
     <>
       <div ref={el}>
-        <div id="smooth-content" className="h-[calc(100vh+50vh)]">
+        <div id="smooth-content" className="h-[calc(100vh+49vh)]">
           <Layout />
-          <section className="contact">
-            <Circle />
-          </section>
+          <section className="h-screen"></section>
           <Footer />
         </div>
       </div>

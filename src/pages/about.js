@@ -1,4 +1,4 @@
-import { useRef, useLayoutEffect, useState } from "react";
+import { useRef, useLayoutEffect, useState, useEffect } from "react";
 import Layout from "./components/Layout";
 import { motion, useSpring, useMotionValue } from "framer-motion";
 import TestimonialCarousel from "./components/TestimonialCarousel";
@@ -26,7 +26,7 @@ function ImageHover({ src, text, desc }) {
           src={src}
           alt="Image"
           className="fixed z-20 pointer-events-none h-50% w-30% bg-black"
-          style={{ top: "30.9%", left: mouseX, transform: "translateY(-50%)" }}
+          style={{ top: "30.45%", left: mouseX, transform: "translateY(-50%)" }}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
@@ -47,7 +47,7 @@ export default function () {
     setMouseX(event.clientX);
   }
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const loadGsap = async () => {
       const { gsap } = await import("gsap");
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
@@ -75,10 +75,7 @@ export default function () {
   return (
     <>
       <div ref={el}>
-        <div
-          id="smooth-content"
-          className="relative w-screen h-[calc(300vh+30vh)] "
-        >
+        <div id="smooth-content" className="relative w-screen h-[335vh] ">
           <Layout title="About" />
           <section className="relative grid w-screen h-screen font-Aboreto">
             <div className="grid w-screen h-screen place-items-center">
@@ -87,14 +84,6 @@ export default function () {
                 frontend developer with strong focus on producing high quality &
                 impactful digital experiences.
               </h1>
-              {/*     <img
-                className="absolute h-35% left-5% top-20% z-0"
-                src="/img/4.jpg"
-              />
-              <img
-                className="absolute h-35% right-5% bottom-20% z-0"
-                src="/img/3.jpg"
-  />*/}
             </div>
           </section>
           <section className="relative w-screen h-90% place-items-center font-Aboreto ">

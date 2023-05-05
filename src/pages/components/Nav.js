@@ -15,11 +15,15 @@ export default function () {
 
   const handleClose = () => {
     setOpen(false);
+    setIsToggled(false);
   };
 
   return (
     <nav className="absolute z-50 flex items-center justify-between w-screen px-5 h-14 font-Aboreto sm:px-5 sm:h-14 md:px-10 md:h-20 lg:px-16 ">
-      <Link href="/" className="z-50 text-xl font-bold cursor-pointer ">
+      <Link
+        href="/"
+        className="z-50 text-xl font-bold cursor-pointer mix-blend-multiply"
+      >
         MOHAMMAD .T
       </Link>
       <div className="z-50 flex gap-5">
@@ -45,11 +49,33 @@ export default function () {
           <motion.div
             initial={{ y: "-100vh" }}
             animate={{ y: 0 }}
-            exit={{ y: "100vh" }}
+            exit={{ y: "-100vh" }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
-            className="absolute top-0 left-0 z-10 w-screen h-screen bg-black"
+            className="absolute top-0 left-0 z-10 grid w-screen h-screen text-white bg-black place-items-center"
           >
-            <h1>an</h1>
+            <div className="grid text-center gap-[3vh]">
+              <Link
+                href="/"
+                className="text-xl font-semibold"
+                onClick={handleClose}
+              >
+                HOME
+              </Link>
+              <Link
+                href="/about"
+                className="text-xl font-semibold"
+                onClick={handleClose}
+              >
+                ABOUT
+              </Link>
+              <Link
+                href="/contact"
+                className="text-xl font-semibold"
+                onClick={handleClose}
+              >
+                CONTACT
+              </Link>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

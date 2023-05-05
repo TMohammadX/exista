@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import Nav from "./components/Nav.js";
 import BackgroundMusic from "./components/BackgroundMusic.js";
