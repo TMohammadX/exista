@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Mohammad T</title>
       </Head>
-      <Nav />
+
       <AnimatePresence mode="wait">
         <Component {...pageProps} />
       </AnimatePresence>

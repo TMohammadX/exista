@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import { motion, useSpring, useMotionValue } from "framer-motion";
 import TestimonialCarousel from "./components/TestimonialCarousel";
 import Footer from "./components/Footer";
+import Nav from "./components/Nav";
 
 function ImageHover({ src, text, desc }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -14,12 +15,12 @@ function ImageHover({ src, text, desc }) {
 
   return (
     <div
-      className="relative flex items-center justify-between w-screen border border-b-0 border-l-0 border-r-0 border-black border-solid px-36 border-t-1 h-1/5 child"
+      className="relative flex items-center justify-between w-screen overflow-hidden border border-b-0 border-l-0 border-r-0 border-black border-solid px-36 border-t-1 h-1/5 child"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <h1 className="text-3xl font-semibold">{text}</h1>
+      <h1 className="font-semibold sm:text-3xl">{text}</h1>
       <h1 className="text-sm font-semibold">{desc}</h1>
       {isHovered && (
         <motion.div
@@ -76,17 +77,18 @@ export default function () {
     <>
       <div ref={el}>
         <div id="smooth-content" className="relative w-screen h-[335vh] ">
+          <Nav />
           <Layout title="About" />
           <section className="relative grid w-screen h-screen font-Aboreto">
             <div className="grid w-screen h-screen place-items-center">
-              <h1 className="z-10 w-3/6 font-semibold leading-tight text-center text-2">
+              <h1 className="z-10 w-3/4 text-2xl font-semibold leading-tight text-center sm:w-3/6 sm:text-2 ">
                 I'm a <b className="italic font-black">Highly proficient</b>{" "}
                 frontend developer with strong focus on producing high quality &
                 impactful digital experiences.
               </h1>
             </div>
           </section>
-          <section className="relative w-screen h-90% place-items-center font-Aboreto ">
+          <section className="relative w-screen h-90% place-items-center font-Aboreto overflow-hidden">
             <ImageHover src="/img/1.jpg" text="DESIGN" desc="SEAMLESS DESIGN" />
             <ImageHover src="/img/2.jpg" text="FRONTEND" desc="SMOOTH UI/UX" />
             <ImageHover

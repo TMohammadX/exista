@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import Layout from "./components/Layout";
 import Footer from "./components/Footer";
 import Circle from "./components/Circle";
+import Nav from "./components/Nav";
 
 export default function () {
   const el = useRef();
@@ -36,6 +37,7 @@ export default function () {
     <>
       <div ref={el}>
         <div id="smooth-content" className="h-[calc(100vh+49vh)]">
+          <Nav />
           <Layout />
           <section className="h-screen"></section>
           <Footer />

@@ -12,6 +12,7 @@ import Layout from "./components/Layout";
 import GlobalStateContext from "./contexts/globalState.js";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Nav from "./components/Nav.js";
 
 export default function Home() {
   const router = useRouter();
@@ -67,6 +68,7 @@ export default function Home() {
           className="flex sm:items-center sm:justify-center w-screen h-[100%] gap-3 px-5 transition-all sm:px-40 overflow-hidden"
           ref={el}
         >
+          <Nav />
           <div className="grid w-screen h-[50vh] sm:hidden place-items-center relative top-[35%] -translate-y-[35%]">
             <Carousel
               showArrows

@@ -19,7 +19,7 @@ export default function () {
   };
 
   return (
-    <nav className="absolute z-50 flex items-center justify-between w-screen px-5 h-14 font-Aboreto sm:px-5 sm:h-14 md:px-10 md:h-20 lg:px-16 ">
+    <nav className="absolute top-0 left-0 z-50 flex items-center justify-between w-screen px-5 h-14 font-Aboreto sm:px-5 sm:h-14 md:px-10 md:h-20 lg:px-16">
       <Link
         href="/"
         className="z-50 text-xl font-bold cursor-pointer mix-blend-multiply"
