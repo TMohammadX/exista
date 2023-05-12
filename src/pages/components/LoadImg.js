@@ -25,7 +25,7 @@ export default function () {
             duration: 5,
           }}
           onAnimationComplete={handleAnimationComplete}
-          className="absolute w-2/4 -translate-x-1/2 -translate-y-1/2 bg-black h-3/5 left-1/2 top-1/2"
+          className="absolute hidden w-2/4 -translate-x-1/2 -translate-y-1/2 bg-black h-3/5 left-1/2 top-1/2 sm:block"
         >
           <video
             className="object-cover w-full h-full grayscale"

@@ -13,6 +13,7 @@ import GlobalStateContext from "./contexts/globalState.js";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from "./components/Nav.js";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const router = useRouter();
@@ -64,7 +65,9 @@ export default function Home() {
       {loading ? (
         <LoadImg />
       ) : (
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           className="flex sm:items-center sm:justify-center w-screen h-[100%] gap-3 px-5 transition-all sm:px-40 overflow-hidden"
           ref={el}
         >
@@ -276,7 +279,7 @@ export default function Home() {
             </video>
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
-        </div>
+        </motion.div>
       )}
     </div>
   );

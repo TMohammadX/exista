@@ -1,7 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import Layout from "./components/Layout";
 import Footer from "./components/Footer";
-import Circle from "./components/Circle";
 import Nav from "./components/Nav";
 
 export default function () {
@@ -39,7 +38,19 @@ export default function () {
         <div id="smooth-content" className="h-[calc(100vh+49vh)]">
           <Nav />
           <Layout />
-          <section className="h-screen"></section>
+          <div style={{ height: "2000px" }} className="grid place-items-center">
+            <div
+              style={{
+                width: "100px",
+                height: "100px",
+                background: "red",
+                opacity: 0,
+                transform: "translateY(-50px)",
+              }}
+            >
+              Hello, world!
+            </div>
+          </div>
           <Footer />
         </div>
       </div>

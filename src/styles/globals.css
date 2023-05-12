@@ -54,6 +54,10 @@ html {
   display: block;
 }
 
+::selection {
+  background-color: lightblue;
+}
+
 .cursor {
   position: fixed;
   border: 1px solid white;
@@ -72,7 +76,7 @@ html {
   width: 50px;
 }
 
-.child:nth-child(3) {
+.child:nth-child(4) {
   border-bottom: 1px solid black !important;
 }
 
