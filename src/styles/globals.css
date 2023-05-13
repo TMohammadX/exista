@@ -55,7 +55,7 @@ html {
 }
 
 ::selection {
-  background-color: lightblue;
+  background-color: rgba(173, 216, 230, 0.548);
 }
 
 .cursor {
@@ -78,6 +78,11 @@ html {
 
 .child:nth-child(4) {
   border-bottom: 1px solid black !important;
+}
+
+.rot {
+  text-orientation: sideways;
+  writing-mode: sideways-lr;
 }
 
 /*contact */

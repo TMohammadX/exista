@@ -22,15 +22,15 @@ export default function () {
     <nav className="absolute top-0 left-0 z-50 flex items-center justify-between w-screen px-5 h-14 font-Aboreto sm:px-5 sm:h-14 md:px-10 md:h-20 lg:px-16">
       <Link
         href="/"
-        className="z-50 text-xl font-bold cursor-pointer mix-blend-multiply"
+        className="z-50 text-xl font-thin cursor-pointer mix-blend-multiply"
       >
         MOHAMMAD .T
       </Link>
       <div className="z-50 flex gap-5">
-        <Link href="/about" className="hidden text-xs font-semibold sm:block">
+        <Link href="/about" className="hidden text-xs font-medium sm:block">
           ABOUT
         </Link>
-        <Link href="/contact" className="hidden text-xs font-semibold sm:block">
+        <Link href="/contact" className="hidden text-xs font-medium sm:block">
           CONTACT
         </Link>
         <button
