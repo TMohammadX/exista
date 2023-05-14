@@ -1,3 +1,15 @@
+/*!
+ * ScrollSmoother 3.11.5
+ * https://greensock.com
+ *
+ * @license Copyright 2023, GreenSock. All rights reserved.
+ * *** DO NOT DEPLOY THIS FILE ***
+ * This is a trial version that only works locally and on domains like codepen.io and codesandbox.io.
+ * Loading it on an unauthorized domain violates the license and will cause a redirect.
+ * Get the unrestricted file by joining Club GreenSock at https://greensock.com/club
+ * @author: Jack Doyle, jack@greensock.com
+ */
+
 let e,
   t,
   r,
@@ -721,6 +733,7 @@ let e,
                   (window._gsapWarned = 1))));
         },
         i = o.length;
+      for (setTimeout(s, 50); --i > -1; ) if (-1 !== e.indexOf(o[i])) return !0;
     })("undefined" != typeof window ? window.location.host : ""),
     (e) => {
       let t = o.querySelector(".ScrollSmoother-wrapper");
@@ -783,9 +796,7 @@ class S {
       K = 1,
       G = h(0),
       J = () => G.update(-Y),
-      Q = {
-        y: 0,
-      },
+      Q = { y: 0 },
       X = () => (m.style.overflow = "visible"),
       Z = (e) => {
         e.update();
@@ -858,12 +869,7 @@ class S {
                 t.pin &&
                   t.end > 0 &&
                   ((i = t.end - t.start),
-                  o.push({
-                    start: t.start,
-                    end: t.end,
-                    distance: i,
-                    trig: t,
-                  }),
+                  o.push({ start: t.start, end: t.end, distance: i, trig: t }),
                   r.setPositions(r.start, r.end + i),
                   r.vars.onRefresh(r)));
             });
@@ -923,12 +929,7 @@ class S {
               p && p.kill(),
               (p =
                 i &&
-                e.to(t, {
-                  ease: d,
-                  overwrite: !1,
-                  y: "+=0",
-                  duration: i,
-                })),
+                e.to(t, { ease: d, overwrite: !1, y: "+=0", duration: i })),
               g && ((g.ratio = h), (g.autoSpeed = f));
           },
           E = () => {
@@ -961,10 +962,7 @@ class S {
                           (t || 1)),
                     (g += t ? -i * t : -i / 2),
                     (h += i)),
-                  {
-                    change: h,
-                    offset: g,
-                  }
+                  { change: h, offset: g }
                 );
               })(t, a(0, 1, -e.start / (e.end - e.start)));
               (k = o.change), (m = o.offset);
@@ -1042,7 +1040,6 @@ class S {
           g
         );
       };
-
     function de() {
       return (
         (y = m.clientHeight),
@@ -1075,10 +1072,7 @@ class S {
       (this.offset = (t, r) => {
         let o,
           s = (t = n(t)[0]).style.cssText,
-          i = l.create({
-            trigger: t,
-            start: r || "top top",
-          });
+          i = l.create({ trigger: t, start: r || "top top" });
         return (
           T && oe([i]),
           (o = i.start / D),
@@ -1105,10 +1099,7 @@ class S {
                 boxSizing: "border-box",
                 y: "+=0",
               }),
-              W ||
-                e.set(m, {
-                  clearProps: "transform",
-                })),
+              W || e.set(m, { clearProps: "transform" })),
             this
           );
         }
@@ -1192,17 +1183,13 @@ class S {
           height: r.innerHeight,
         }),
       }),
-      l.defaults({
-        scroller: v,
-      });
+      l.defaults({ scroller: v });
     let he = l.getAll().filter((e) => e.scroller === r || e.scroller === v);
     he.forEach((e) => e.revert(!0, !0)),
       (b = l.create({
         animation: e.fromTo(
           Q,
-          {
-            y: 0,
-          },
+          { y: 0 },
           {
             y: () => -de(),
             immediateRender: !1,
@@ -1276,9 +1263,7 @@ class S {
           !0 === u.effects
             ? "[data-" + q + "speed], [data-" + q + "lag]"
             : u.effects,
-          {
-            effectsPadding: u.effectsPadding,
-          }
+          { effectsPadding: u.effectsPadding }
         ),
       u.sections &&
         this.sections(!0 === u.sections ? "[data-section]" : u.sections),
@@ -1323,11 +1308,7 @@ class S {
             (v.style.cssText = R),
             (m.style.cssText = P);
           let o = l.defaults({});
-          o &&
-            o.scroller === v &&
-            l.defaults({
-              scroller: r,
-            }),
+          o && o.scroller === v && l.defaults({ scroller: r }),
             this.normalizer && l.normalizeScroll(!1),
             clearInterval(E),
             (c = null),
@@ -1338,22 +1319,13 @@ class S {
       (this.refresh = (e, t) => b.refresh(e, t)),
       I &&
         (this.normalizer = l.normalizeScroll(
-          !0 === I
-            ? {
-                debounce: !0,
-                content: !W && m,
-              }
-            : I
+          !0 === I ? { debounce: !0, content: !W && m } : I
         )),
       l.config(u),
       "overscrollBehavior" in r.getComputedStyle(i) &&
-        e.set([i, s], {
-          overscrollBehavior: "none",
-        }),
+        e.set([i, s], { overscrollBehavior: "none" }),
       "scrollBehavior" in r.getComputedStyle(i) &&
-        e.set([i, s], {
-          scrollBehavior: "auto",
-        }),
+        e.set([i, s], { scrollBehavior: "auto" }),
       r.addEventListener("focusin", re),
       (E = setInterval(J, 250)),
       "loading" === o.readyState || requestAnimationFrame(() => l.refresh());

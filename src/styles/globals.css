@@ -170,6 +170,57 @@ html {
   animation: cursorAnim 0.5s forwards;
 }
 
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -900%;
+  }
+}
+
+@keyframes marqueee {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -900%;
+  }
+}
+
+.animatess {
+  width: 900%;
+  animation: marqueee 30s linear infinite;
+}
+
+.animates {
+  width: 500%;
+  animation: marquee 20s linear infinite;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+@media (min-width: 1024px) {
+  @keyframes marquee {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -375%;
+    }
+  }
+  .animates {
+    width: 750%;
+    animation: marquee 20s linear infinite;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+/* .animates:hover {
+  animation-play-state: paused;
+} */
+
 @media (max-width: 1000px) {
   .cursor {
     display: none;

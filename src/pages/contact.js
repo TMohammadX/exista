@@ -12,7 +12,7 @@ export default function () {
     const loadGsap = async () => {
       const { gsap } = await import("gsap");
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
-      const { ScrollSmoother } = await import("./components/ScrollSmoother");
+      const { ScrollSmoother } = await import("./contexts/ScrollSmoother");
 
       gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -49,38 +49,42 @@ export default function () {
                 <div className="flex gap-3">
                   <input
                     type="text"
-                    className="bg-transparent border border-black h-[40px] outline-none p-5 text-sm placeholder:text-gray-400 font-thin"
+                    className="bg-transparent border border-black h-[40px] outline-none p-5 text-xs placeholder:text-gray-400 font-thin"
                     placeholder="first name"
                   />
                   <input
                     type="text"
-                    className="bg-transparent border border-black h-[40px] outline-none p-5 text-sm placeholder:text-gray-400 font-thin"
+                    className="bg-transparent border border-black h-[40px] outline-none p-5 text-xs placeholder:text-gray-400 font-thin"
                     placeholder="last name"
                   />
                 </div>
                 <input
                   type="email"
-                  className="bg-transparent border border-black h-[40px] outline-none p-5 text-sm placeholder:text-gray-400 font-thin"
+                  className="bg-transparent border border-black h-[40px] outline-none p-5 text-xs placeholder:text-gray-400 font-thin"
                   placeholder="Email"
                 />
                 <textarea
                   type="text"
-                  className="bg-transparent border border-black h-[25vh] resize-none outline-none pl-5 pt-3 text-sm placeholder:text-gray-400 font-thin"
+                  className="bg-transparent border border-black h-[25vh] resize-none outline-none pl-5 pt-3 text-xs placeholder:text-gray-400 font-thin"
                   placeholder="message"
                 />
               </form>
             </div>
-            <Marquee
-              pauseOnClick
-              gradient={false}
-              speed={50}
-              direction="down"
-              className="absolute"
-            >
-              <h1 className="absolute text-4xl font-bold text-black 2xl:text-5xl w-[20px] h-[100vh] rot">
-                GET IN TOUCH · GET IN TOUCH · GET IN TOUCH · GET IN TOUCH
-              </h1>
-            </Marquee>
+
+            <h1 className=" absolute text-[4vw] font-thin text-black 2xl:text-5xl  w-max rotate-[-90deg] animatess">
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+            </h1>
             <div className="w-[50%] h-screen grid place-items-center">
               <button
                 onClick={sendEmail}

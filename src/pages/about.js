@@ -4,6 +4,7 @@ import { motion, useSpring, useMotionValue } from "framer-motion";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 export default function () {
   const el = useRef();
@@ -45,7 +46,7 @@ export default function () {
     const loadGsap = async () => {
       const { gsap } = await import("gsap");
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
-      const { ScrollSmoother } = await import("./components/ScrollSmoother");
+      const { ScrollSmoother } = await import("./contexts/ScrollSmoother");
 
       gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -73,8 +74,136 @@ export default function () {
           <Nav />
           <Layout title="About" />
           <section className="relative grid w-screen h-[125vh] font-Aboreto">
-            <div className="min-h-screen "></div>
-            <div className="z-10 -mt-32 text-5xl font-semibold leading-normal text-center sm:text-2">
+            <div className="relative min-h-screen">
+              <div className="absolute left-0 flex animates">
+                <div className="flex justify-around w-[50%]">
+                  <Image
+                    src="/img/1.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/2.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/3.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/4.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/5.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/6.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/1.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/2.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/3.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/4.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="flex justify-around w-[50%]">
+                  <Image
+                    src="/img/5.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/6.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/1.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/2.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/3.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/4.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/5.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/6.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/1.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                  <Image
+                    src="/img/2.jpg"
+                    width={300}
+                    height={500}
+                    alt="Picture of the author"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="z-50 -mt-32 text-5xl font-semibold leading-normal text-center sm:text-2">
               <motion.h1
                 initial={{ y: "5%", opacity: 0 }}
                 animate={
@@ -162,16 +291,16 @@ export default function () {
                 </motion.p>
               </motion.div>
             </div>
-            <div className="w-[25%] rounded-t-full h-3/4 rounded-se-full bg-black" />
+            <div className="w-[25%] rounded-t-full h-3/4 rounded-se-full bg-2" />
           </section>
           <section className="h-[110vh] font-Aboreto grid place-items-center">
             <div className="relative flex justify-center w-screen h-screen">
-              <div className="bg-black h-[60%] w-[20%]" />
+              <div className="bg-5 h-[60%] w-[20%]" />
               <h1 className="text-black transform rotate-[-90deg] absolute top-1/2 -translate-y-1/2 text-right text-4xl font-thin lg:text-[3vw]">
                 MOHAMMAD T
               </h1>
               <div className="w-[10%]" />
-              <div className="bg-black h-[60%] w-[20%] items-end self-end" />
+              <div className="bg-3 h-[60%] w-[20%] items-end self-end" />
             </div>
           </section>
         </div>
