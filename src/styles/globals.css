@@ -188,6 +188,25 @@ html {
   }
 }
 
+@keyframes marqueeee {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -800%;
+  }
+}
+
+.animatesss {
+  height: 800%;
+  animation: marqueeee 40s linear infinite;
+  opacity: 0.7;
+}
+
+.tt > img {
+  width: 500px;
+}
+
 .animatess {
   width: 900%;
   animation: marqueee 30s linear infinite;

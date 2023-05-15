@@ -291,11 +291,11 @@ export default function () {
                 </motion.p>
               </motion.div>
             </div>
-            <div className="w-[25%] rounded-t-full h-3/4 rounded-se-full bg-2" />
+            <div className="w-[25%] rounded-t-full h-3/4 rounded-se-full bg-5" />
           </section>
           <section className="h-[110vh] font-Aboreto grid place-items-center">
             <div className="relative flex justify-center w-screen h-screen">
-              <div className="bg-5 h-[60%] w-[20%]" />
+              <div className="bg-2 h-[60%] w-[20%]" />
               <h1 className="text-black transform rotate-[-90deg] absolute top-1/2 -translate-y-1/2 text-right text-4xl font-thin lg:text-[3vw]">
                 MOHAMMAD T
               </h1>
