@@ -3,7 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import Nav from "./components/Nav.js";
 import BackgroundMusic from "./components/BackgroundMusic.js";
 import { useState } from "react";
-import GlobalStateContext from "./contexts/globalState.js";
+import GlobalStateContext from "./contexts/GlobalState.js";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }) {

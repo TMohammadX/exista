@@ -1,17 +1,9 @@
-import {
-  useState,
-  useEffect,
-  useContext,
-  useLayoutEffect,
-  useRef,
-} from "react";
+import { useState, useEffect, useContext, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router.js";
 import LoadImg from "./components/LoadImg.js";
-import Layout from "./components/Layout";
-import GlobalStateContext from "./contexts/globalState.js";
+import GlobalStateContext from "./contexts/GlobalState.js";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from "./components/Nav.js";
 import { motion } from "framer-motion";
 
