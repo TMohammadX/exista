@@ -23,6 +23,12 @@ module.exports = {
         5: "url(/img/5.jpg)",
         6: "url(/img/6.jpg)",
         7: "url(/img/sss.png)",
+        t: "url(/img/t.jpg)",
+        b: "url(/img/b.jpg)",
+        m: "url(/img/m.jpg)",
+        r: "url(/img/r.jpg)",
+        e: "url(/img/e.jpg)",
+        s: "url(/img/s.jpg)",
       },
       keyframes: {
         transition: {

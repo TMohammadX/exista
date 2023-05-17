@@ -70,140 +70,39 @@ export default function () {
   return (
     <>
       <div ref={el}>
-        <div id="smooth-content" className="relative w-screen min-h-[300vh] ">
+        <div id="smooth-content" className="relative w-screen min-h-[200vh] ">
           <Nav />
           <Layout title="About" />
-          <section className="relative grid w-screen h-[125vh] font-Aboreto">
-            <div className="relative min-h-screen">
+          <section className="relative grid w-screen h-[130vh] font-Aboreto">
+            <div className="relative h-screen">
               <div className="absolute left-0 flex animates">
                 <div className="flex justify-around w-[50%]">
-                  <Image
-                    src="/img/1.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/2.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/3.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/4.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/5.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/6.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/1.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/2.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/3.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/4.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
                 </div>
                 <div className="flex justify-around w-[50%]">
-                  <Image
-                    src="/img/5.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/6.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/1.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/2.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/3.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/4.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/5.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/6.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/1.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                  />
-                  <Image
-                    src="/img/2.jpg"
-                    width={300}
-                    height={500}
-                    alt="Picture of the author"
-                    className="object-cover"
-                  />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
+                  <div className="w-[20vw] bg-m h-[60vh]" />
                 </div>
               </div>
             </div>
-            <div className="z-50 -mt-32 text-5xl font-semibold leading-normal text-center sm:text-2">
+            <div className="z-50 text-5xl font-semibold leading-normal text-center sm:text-2">
               <motion.h1
                 initial={{ y: "5%", opacity: 0 }}
                 animate={
