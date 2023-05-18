@@ -91,378 +91,294 @@ export default function () {
                 <div className="absolute flex p-[7%] gap-5 z-10  w-50%  animatesss">
                   <div className="grid gap-5 tt">
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/m.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/e.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/s.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/r.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/t.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/m.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/e.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                      className="object-cover"
-                    />
-                    <Image
-                      src="/img/7.jpg"
+                      src="/img/s.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/r.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/t.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/m.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/e.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/s.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/r.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/t.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                      className="object-cover"
-                    />
-                    <Image
-                      src="/img/7.jpg"
+                      src="/img/m.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/e.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/s.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/r.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/t.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                      className="object-cover mb-[10vh]"
                     />
                   </div>
                   <div className="grid gap-5 tt">
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/e.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/m.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/s.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/t.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/r.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/e.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/m.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/s.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                      className="object-cover"
-                    />
-                    <Image
-                      src="/img/7.jpg"
+                      src="/img/t.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/r.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/e.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/s.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/t.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/r.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                      className="object-cover"
-                    />
-                    <Image
-                      src="/img/7.jpg"
+                      src="/img/m.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/s.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/t.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/7.jpg"
+                      src="/img/r.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/7.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                      className="object-cover"
                     />
                   </div>
                 </div>

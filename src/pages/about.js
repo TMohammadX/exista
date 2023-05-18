@@ -1,20 +1,16 @@
-import { useRef, useLayoutEffect, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import Layout from "./components/Layout";
-import { motion, useSpring, useMotionValue } from "framer-motion";
-import Footer from "./components/Footer";
+import { motion } from "framer-motion";
 import Nav from "./components/Nav";
 import { useInView } from "react-intersection-observer";
-import Image from "next/image";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 export default function () {
   const el = useRef();
   const [isReady, setIsReady] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
   const [mouseX, setMouseX] = useState(0);
   const [scroll, setScroll] = useState(false);
-
   const [ref, inView] = useInView();
-
   const images = ["/img/2.jpg", "/img/2.jpg", "/img/2.jpg", "/img/2.jpg"];
 
   function handleMouseMove(event) {
@@ -73,61 +69,66 @@ export default function () {
         <div id="smooth-content" className="relative w-screen min-h-[200vh] ">
           <Nav />
           <Layout title="About" />
-          <section className="relative grid w-screen h-[130vh] font-Aboreto">
-            <div className="relative h-screen">
-              <div className="absolute left-0 flex animates">
-                <div className="flex justify-around w-[50%]">
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
+          <ParallaxProvider>
+            <Parallax speed={10}>
+              <section className="relative grid w-screen h-[130vh] font-Aboreto">
+                <div className="relative h-screen">
+                  <div className="absolute left-0 flex animates">
+                    <div className="flex justify-around w-[50%]">
+                      <div className="w-[20vw] bg-m bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-e bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-t bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-s bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-r bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-b bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-m bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-e bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-t bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-s bg-cover bg-center h-[60vh]" />
+                    </div>
+                    <div className="flex justify-around w-[50%]">
+                      <div className="w-[20vw] bg-r bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-b bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-m bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-e bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-t bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-s bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-r bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-b bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-m bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-e bg-cover bg-center h-[60vh]" />
+                    </div>
+                  </div>
                 </div>
-                <div className="flex justify-around w-[50%]">
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                  <div className="w-[20vw] bg-m h-[60vh]" />
-                </div>
-              </div>
-            </div>
-            <div className="z-50 text-5xl font-semibold leading-normal text-center sm:text-2">
-              <motion.h1
-                initial={{ y: "5%", opacity: 0 }}
-                animate={
-                  scroll ? { y: 0, opacity: 1 } : { y: "40px", opacity: 0 }
-                }
-                transition={{ duration: 0.5 }}
-                exit={{ y: "30px", opacity: 0 }}
-                className="sm:text-[2.6rem] lg:text-[3vw] overflow-hidden font-thin"
-              >
-                CREATING INTERACTIONS
-              </motion.h1>
 
-              <motion.h1
-                initial={{ y: "5%", opacity: 0 }}
-                animate={
-                  scroll ? { y: 0, opacity: 1 } : { y: "40px", opacity: 0 }
-                }
-                transition={{ duration: 0.5, delay: 0.2 }}
-                exit={{ y: "30px", opacity: 0 }}
-                className="sm:text-[2.6rem] lg:text-[3vw] overflow-hidden font-thin"
-              >
-                BETWEEN COMPONENTS AND ELEMENTS
-              </motion.h1>
-            </div>
-          </section>
+                <div className="z-50 text-5xl font-semibold leading-normal text-center sm:text-2">
+                  <motion.h1
+                    initial={{ y: "5%", opacity: 0 }}
+                    animate={
+                      scroll ? { y: 0, opacity: 1 } : { y: "40px", opacity: 0 }
+                    }
+                    transition={{ duration: 0.5 }}
+                    exit={{ y: "30px", opacity: 0 }}
+                    className="sm:text-[2.6rem] lg:text-[3vw] overflow-hidden font-thin"
+                  >
+                    CREATING INTERACTIONS
+                  </motion.h1>
+
+                  <motion.h1
+                    initial={{ y: "5%", opacity: 0 }}
+                    animate={
+                      scroll ? { y: 0, opacity: 1 } : { y: "40px", opacity: 0 }
+                    }
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    exit={{ y: "30px", opacity: 0 }}
+                    className="sm:text-[2.6rem] lg:text-[3vw] overflow-hidden font-thin"
+                  >
+                    BETWEEN COMPONENTS AND ELEMENTS
+                  </motion.h1>
+                </div>
+              </section>
+            </Parallax>
+          </ParallaxProvider>
           <section className="font-Aboreto flex w-screen h-screen font-bold mt-[10%] justify-center">
             <div className="flex gap-[10%] w-[50%]">
               <h1 className="text-[0.9vw] font-thin">ABOUT ME</h1>
@@ -190,16 +191,16 @@ export default function () {
                 </motion.p>
               </motion.div>
             </div>
-            <div className="w-[25%] rounded-t-full h-3/4 rounded-se-full bg-5" />
+            <div className="w-[25%] rounded-t-full h-3/4 rounded-se-full bg-r bg-center bg-cover" />
           </section>
           <section className="h-[110vh] font-Aboreto grid place-items-center">
             <div className="relative flex justify-center w-screen h-screen">
-              <div className="bg-2 h-[60%] w-[20%]" />
+              <div className="bg-b h-[60%] w-[20%] bg-cover bg-center" />
               <h1 className="text-black transform rotate-[-90deg] absolute top-1/2 -translate-y-1/2 text-right text-4xl font-thin lg:text-[3vw]">
                 MOHAMMAD T
               </h1>
               <div className="w-[10%]" />
-              <div className="bg-3 h-[60%] w-[20%] items-end self-end" />
+              <div className="bg-3 h-[60%] w-[20%] items-end self-end bg-cover bg-center" />
             </div>
           </section>
         </div>
