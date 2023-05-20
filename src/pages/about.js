@@ -70,7 +70,7 @@ export default function () {
           <Nav />
           <Layout title="About" />
           <ParallaxProvider>
-            <Parallax speed={10}>
+            <Parallax speed={3}>
               <section className="relative grid w-screen h-[130vh] font-Aboreto">
                 <div className="relative h-screen">
                   <div className="absolute left-0 flex animates">
@@ -191,16 +191,20 @@ export default function () {
                 </motion.p>
               </motion.div>
             </div>
-            <div className="w-[25%] rounded-t-full h-3/4 rounded-se-full bg-r bg-center bg-cover" />
+            <ParallaxProvider>
+              <Parallax speed={7}>
+                <div className="w-[25vw] rounded-t-full h-3/4 rounded-se-full bg-r bg-center bg-cover" />
+              </Parallax>
+            </ParallaxProvider>
           </section>
           <section className="h-[110vh] font-Aboreto grid place-items-center">
             <div className="relative flex justify-center w-screen h-screen">
               <div className="bg-b h-[60%] w-[20%] bg-cover bg-center" />
               <h1 className="text-black transform rotate-[-90deg] absolute top-1/2 -translate-y-1/2 text-right text-4xl font-thin lg:text-[3vw]">
-                MOHAMMAD T
+                Get In Touch
               </h1>
               <div className="w-[10%]" />
-              <div className="bg-3 h-[60%] w-[20%] items-end self-end bg-cover bg-center" />
+              <div className="bg-3 h-[60%] w-[20vw] items-end self-end bg-cover bg-center" />
             </div>
           </section>
         </div>
