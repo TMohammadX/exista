@@ -187,7 +187,7 @@ export default function Home() {
           </div>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-left bg-cover cursor-pointer h-3/5 bg-t hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box"
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-t hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -203,31 +203,31 @@ export default function Home() {
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-10% bg-cover cursor-pointer h-3/5 bg-b hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box"
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-b hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-20% bg-cover cursor-pointer h-3/5 bg-m hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-m hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-30% bg-cover cursor-pointer h-3/5 bg-r hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-r hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-40% bg-cover cursor-pointer h-3/5 bg-e hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-e hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-50% bg-cover cursor-pointer h-3/5 bg-s hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-s hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
