@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Nav from "./components/Nav";
 import { useInView } from "react-intersection-observer";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import Link from "next/link";
 
 export default function () {
   const el = useRef();
@@ -198,24 +199,31 @@ export default function () {
             </ParallaxProvider>
           </section>
           <section className="h-[110vh] font-Aboreto grid place-items-center">
-            <div className="relative flex justify-center w-screen h-screen">
-              <div
-                className="bg-m h-[60%] w-[20%] bg-cover bg-center cursor-pointer"
-                onClick={() => {
-                  (location.href = "mailto:test@gmail.com"), "_blank";
-                }}
-              />
-              <h1 className="text-black transform rotate-[-90deg] absolute top-1/2 -translate-y-1/2 text-right text-4xl font-thin lg:text-[3vw]">
-                Get In Touch
-              </h1>
-              <div className="w-[10%]" />
-              <div
-                className="bg-m h-[60%] w-[20vw] items-end self-end bg-cover bg-center cursor-pointer"
-                onClick={() => {
-                  (location.href = "https://twitter.com"), "_blank";
-                }}
-              />
-            </div>
+            <ParallaxProvider>
+              <Parallax speed={10}>
+                <div className="relative flex justify-center w-screen h-screen">
+                  <div
+                    className="bg-m h-[60%] w-[20%] bg-cover bg-center cursor-pointer"
+                    onClick={() => {
+                      (location.href = "mailto:test@gmail.com"), "_blank";
+                    }}
+                  />
+                  <Link
+                    href="/contact"
+                    className="text-black transform rotate-[-90deg] absolute top-1/2 -translate-y-1/2 text-right text-4xl font-thin lg:text-[3vw]"
+                  >
+                    Get In Touch
+                  </Link>
+                  <div className="w-[10%]" />
+                  <div
+                    className="bg-m h-[60%] w-[20vw] items-end self-end bg-cover bg-center cursor-pointer"
+                    onClick={() => {
+                      (location.href = "https://twitter.com"), "_blank";
+                    }}
+                  />
+                </div>
+              </Parallax>
+            </ParallaxProvider>
           </section>
         </div>
       </div>

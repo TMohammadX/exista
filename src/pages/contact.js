@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
+import emailjs from "emailjs-com";
 
 export default function () {
   const el = useRef();
@@ -34,9 +35,91 @@ export default function () {
     loadGsap();
   }, []);
 
-  const sendEmail = () => {
-    console.log("submitted");
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [name, setName] = useState("");
+  const [name1, setName1] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [isVerified, setIsVerified] = useState(false);
+  const formRef = useRef();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    const isValid = validateInputs();
+    if (!isValid) {
+      return;
+    }
+    setSent(true);
+    setSending(true);
+
+    emailjs
+      .sendForm(
+        "service_jf8nza9",
+        "template_stv1zyc",
+        formRef.current,
+        "qe_5QnRhPOV92GdYp"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSending(false);
+          setSent(true);
+        },
+        (error) => {
+          console.log(error.text);
+          alert(
+            "Sorry, there was an error sending your message. Please try again later."
+          );
+        }
+      );
+    setTimeout(() => {
+      setSending(false);
+      setSent(true);
+    }, 2000);
+  }
+
+  const handleExpired = () => {
+    setIsVerified(false);
+    // disable submit button
+    document.getElementById("submit-btn").Disabled = true;
   };
+
+  function validateInputs() {
+    if (!name) {
+      alert("Please enter your name");
+      return false;
+    }
+
+    if (!email) {
+      alert("Please enter your email");
+      return false;
+    }
+
+    if (!message) {
+      alert("Please enter your message");
+      return false;
+    }
+
+    return true;
+  }
+
+  function handleNameChange(e) {
+    setName(e.target.value);
+  }
+
+  function handleLastNameChange(e) {
+    setName1(e.target.value);
+  }
+
+  function handleEmailChange(e) {
+    setEmail(e.target.value);
+  }
+
+  function handleMessageChange(e) {
+    setMessage(e.target.value);
+  }
 
   return (
     <>
@@ -46,28 +129,44 @@ export default function () {
           <Layout />
           <div className="flex justify-center w-screen h-screen font-Aboreto">
             <div className="w-[50%] h-screen grid place-items-center">
-              <form onSubmit={sendEmail} className="grid gap-3 w-[30vw]">
+              <form
+                onSubmit={sendEmail}
+                className="grid gap-3 w-[30vw]"
+                ref={formRef}
+              >
                 <div className="flex w-[30vw] gap-3">
                   <input
                     type="text"
+                    name="from_name"
                     className="bg-transparent border border-black w-[50%] h-[40px] outline-none p-5 text-xs placeholder:text-gray-400 font-thin"
                     placeholder="first name"
+                    value={name}
+                    onChange={handleNameChange}
                   />
                   <input
                     type="text"
+                    name="from_last_name"
                     className="bg-transparent border border-black w-[50%] h-[40px] outline-none p-5 text-xs placeholder:text-gray-400 font-thin"
                     placeholder="last name"
+                    value={name1}
+                    onChange={handleLastNameChange}
                   />
                 </div>
                 <input
                   type="email"
+                  name="from_email"
                   className="w-[30vw] bg-transparent border border-black h-[40px] outline-none p-5 text-xs placeholder:text-gray-400 font-thin"
                   placeholder="Email"
+                  value={email}
+                  onChange={handleEmailChange}
                 />
                 <textarea
                   type="text"
+                  name="message"
                   className="w-[30vw] bg-transparent border border-black h-[25vh] resize-none outline-none pl-5 pt-3 text-xs placeholder:text-gray-400 font-thin"
                   placeholder="message"
+                  value={message}
+                  onChange={handleMessageChange}
                 />
               </form>
             </div>
@@ -385,9 +484,17 @@ export default function () {
               </div>
               <button
                 onClick={sendEmail}
+                value="Send"
+                id="submit-btn"
                 className="w-[20vh] h-[20vh] bg-black rounded-full text-white z-20 hover:bg-[#ffffff5d] hover:backdrop-blur-lg hover:text-black transition-all"
               >
-                send
+                {sending ? (
+                  <span>...</span>
+                ) : sent ? (
+                  <span>&#10004;</span>
+                ) : (
+                  <span>SEND</span>
+                )}
               </button>
             </div>
           </div>

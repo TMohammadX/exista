@@ -17,6 +17,8 @@
     "autoprefixer": "10.4.14",
     "barba.js": "^1.0.0",
     "dom-parser": "^0.1.6",
+    "emailjs": "^4.0.2",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^10.12.4",
     "gsap": "^3.11.5",
     "gsap-trial": "^3.11.5",
