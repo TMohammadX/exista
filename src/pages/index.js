@@ -2,7 +2,7 @@ import { useState, useEffect, useContext, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router.js";
 import LoadImg from "./components/LoadImg.js";
-import GlobalStateContext from "./contexts/GlobalState.js";
+import GlobalStateContext from "../contexts/GlobalState.js";
 import { Carousel } from "react-responsive-carousel";
 import Nav from "./components/Nav.js";
 import { motion } from "framer-motion";
@@ -18,7 +18,7 @@ export default function Home() {
     const loadGsap = async () => {
       const { gsap } = await import("gsap");
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
-      const { ScrollSmoother } = await import("./contexts/ScrollSmoother.js");
+      const { ScrollSmoother } = await import("../contexts/ScrollSmoother.js");
 
       gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 

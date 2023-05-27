@@ -14,7 +14,7 @@ export default function () {
     const loadGsap = async () => {
       const { gsap } = await import("gsap");
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
-      const { ScrollSmoother } = await import("./contexts/ScrollSmoother");
+      const { ScrollSmoother } = await import("../contexts/ScrollSmoother");
 
       gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 

@@ -32,3 +32,45 @@
     at async prepareFrameworks (C:\Users\moham\AppData\Roaming\nvm\v20.1.0\node_modules\firebase-tools\lib\frameworks\index.js:207:122)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2023-05-27T23:31:54.690Z] ----------------------------------------------------------------------
+[debug] [2023-05-27T23:31:54.694Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-27T23:31:54.694Z] CLI Version:   12.0.0
+[debug] [2023-05-27T23:31:54.695Z] Platform:      win32
+[debug] [2023-05-27T23:31:54.695Z] Node Version:  v20.1.0
+[debug] [2023-05-27T23:31:54.695Z] Time:          Sat May 27 2023 19:31:54 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2023-05-27T23:31:54.695Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-27T23:31:54.698Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-05-27T23:31:54.809Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-27T23:31:54.809Z] > authorizing via signed-in user (bargineo@gmail.com)
+[debug] [2023-05-27T23:31:54.809Z] [iam] checking project mttt-8a3d3 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-27T23:31:54.810Z] > refreshing access token with scopes: []
+[debug] [2023-05-27T23:31:54.811Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-27T23:31:54.811Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-27T23:31:54.950Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-05-27T23:31:54.951Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-05-27T23:31:55.031Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-27T23:31:55.031Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-27T23:31:55.043Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mttt-8a3d3:testIamPermissions [none]
+[debug] [2023-05-27T23:31:55.043Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mttt-8a3d3:testIamPermissions x-goog-quota-user=projects/mttt-8a3d3
+[debug] [2023-05-27T23:31:55.043Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mttt-8a3d3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-27T23:31:55.371Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mttt-8a3d3:testIamPermissions 200
+[debug] [2023-05-27T23:31:55.372Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mttt-8a3d3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-27T23:31:55.374Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mttt-8a3d3 [none]
+[debug] [2023-05-27T23:31:55.721Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mttt-8a3d3 200
+[debug] [2023-05-27T23:31:55.721Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mttt-8a3d3 {"projectId":"mttt-8a3d3","projectNumber":"570659311231","displayName":"mttt","name":"projects/mttt-8a3d3","resources":{"hostingSite":"mttt-8a3d3"},"state":"ACTIVE","etag":"1_9611765c-947e-4c69-8dde-bee35f1f1eae"}
+[debug] [2023-05-27T23:32:22.532Z] Error: Export encountered errors on following paths:
+	/contexts/GlobalState
+	/contexts/ScrollSmoother
+    at C:\Users\moham\OneDrive\Desktop\websites\port\node_modules\next\dist\export\index.js:608:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Span.traceAsyncFn (C:\Users\moham\OneDrive\Desktop\websites\port\node_modules\next\dist\trace\trace.js:97:20)
+    at async C:\Users\moham\OneDrive\Desktop\websites\port\node_modules\next\dist\build\index.js:1440:21
+    at async Span.traceAsyncFn (C:\Users\moham\OneDrive\Desktop\websites\port\node_modules\next\dist\trace\trace.js:97:20)
+    at async C:\Users\moham\OneDrive\Desktop\websites\port\node_modules\next\dist\build\index.js:1298:17
+    at async Span.traceAsyncFn (C:\Users\moham\OneDrive\Desktop\websites\port\node_modules\next\dist\trace\trace.js:97:20)
+    at async build (C:\Users\moham\OneDrive\Desktop\websites\port\node_modules\next\dist\build\index.js:143:29)
+    at async build (C:\Users\moham\AppData\Roaming\nvm\v20.1.0\node_modules\firebase-tools\lib\frameworks\next\index.js:56:5)
+    at async prepareFrameworks (C:\Users\moham\AppData\Roaming\nvm\v20.1.0\node_modules\firebase-tools\lib\frameworks\index.js:207:122)
+[error] 
+[error] Error: An unexpected error has occurred.
