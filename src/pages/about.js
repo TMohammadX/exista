@@ -145,10 +145,10 @@ export default function () {
                   exit={{ y: "40px", opacity: 0.2 }}
                   transition={{ duration: 0.5 }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  I am a highly skilled web developer with expertise in HTML,
+                  CSS, and JavaScript. With fluency in Next.js, Sass, Tailwind
+                  CSS, and React Native, I possess a comprehensive toolkit to
+                  build robust and dynamic web applications.
                 </motion.p>
                 <br />
                 <motion.p
@@ -159,10 +159,10 @@ export default function () {
                   exit={{ y: "40px", opacity: 0.2 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  Rutrum tellus pellentesque eu tincidunt. Proin libero nunc
-                  consequat interdum varius sit amet. Metus vulputate eu
-                  scelerisque felis. Vulputate eu scelerisque felis imperdiet
-                  proin fermentum leo vel. Aliquet nec ullamcorper.
+                  I am a fully dedicated and disciplined individual, committed
+                  to delivering high-quality work in the fastest possible time.
+                  I thrive on challenging projects and am willing to go the
+                  extra mile to ensure exceptional results.
                 </motion.p>
                 <br />
                 <motion.p
@@ -173,9 +173,10 @@ export default function () {
                   exit={{ y: "40px", opacity: 0.2 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                  Morem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Aliquam vestibulum morbi blandit.
+                  My proficiency in these technologies allows me to create
+                  visually appealing and functional websites. Additionally
+                  enabling me to build responsive and interactive web
+                  applications.
                 </motion.p>
                 <br />
                 <motion.p
@@ -186,9 +187,10 @@ export default function () {
                   exit={{ y: "40px", opacity: 0.2 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                  Rutrum tellus pellentesque eu tincidunt. Proin libero nunc
-                  consequat interdum varius sit amet. Metus vulputate eu
-                  scelerisque felis.
+                  I pride myself on my meticulous attention to detail and strong
+                  problem-solving abilities. I am constantly seeking to expand
+                  my knowledge and stay up to date with the latest industry
+                  trends and technologies.
                 </motion.p>
               </motion.div>
             </div>
@@ -205,7 +207,7 @@ export default function () {
                   <div
                     className="bg-m h-[60%] w-[20%] bg-cover bg-center cursor-pointer"
                     onClick={() => {
-                      (location.href = "mailto:test@gmail.com"), "_blank";
+                      (location.href = "mailto:bargineo@gmail.com"), "_blank";
                     }}
                   />
                   <Link
@@ -218,7 +220,8 @@ export default function () {
                   <div
                     className="bg-m h-[60%] w-[20vw] items-end self-end bg-cover bg-center cursor-pointer"
                     onClick={() => {
-                      (location.href = "https://twitter.com"), "_blank";
+                      (location.href = "https://twitter.com/TMohammadX"),
+                        (target = "_blank");
                     }}
                   />
                 </div>

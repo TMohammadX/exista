@@ -1,10 +1,11 @@
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import { AnimatePresence } from "framer-motion";
 import Nav from "./components/Nav.js";
 import BackgroundMusic from "./components/BackgroundMusic.js";
 import { useState } from "react";
 import GlobalStateContext from "../contexts/GlobalState.js";
 import Head from "next/head";
+import Cursor from "./components/Cursor";
 
 export default function App({ Component, pageProps }) {
   const [isFirstMount, setIsFirstMount] = useState(true);
@@ -15,6 +16,7 @@ export default function App({ Component, pageProps }) {
       </Head>
 
       <AnimatePresence mode="wait">
+        <Cursor />
         <Component {...pageProps} />
       </AnimatePresence>
       <BackgroundMusic />
