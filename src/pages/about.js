@@ -9,20 +9,12 @@ import Link from "next/link";
 export default function () {
   const el = useRef();
   const [isReady, setIsReady] = useState(false);
-  const [mouseX, setMouseX] = useState(0);
   const [scroll, setScroll] = useState(false);
   const [ref, inView] = useInView();
-  const images = ["/img/2.jpg", "/img/2.jpg", "/img/2.jpg", "/img/2.jpg"];
-
-  function handleMouseMove(event) {
-    setMouseX(event.clientX);
-  }
 
   useEffect(() => {
     function handleScroll() {
       if (window.scrollY > 100) {
-        // Execute your function here
-        console.log("User has scrolled more than 100 pixels");
         setScroll(true);
       } else if (window.scrollY > 200) {
         setScroll(false);

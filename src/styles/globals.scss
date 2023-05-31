@@ -152,12 +152,11 @@ html {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background-color: white;
-  mix-blend-mode: difference;
-  background-color: #1f1f1f;
+  background-color: black;
   pointer-events: none;
   z-index: 1000000;
   backdrop-filter: grayscale(1);
+  border: none;
 }
 
 @keyframes cursorAnim {
