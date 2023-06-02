@@ -186,7 +186,7 @@ export default function Home() {
             </Carousel>
           </div>
           <Link
-            href="/"
+            href="/stuart"
             className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square  hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>

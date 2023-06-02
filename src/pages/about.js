@@ -93,7 +93,6 @@ export default function () {
                     </div>
                   </div>
                 </div>
-
                 <div className="z-50 text-5xl font-semibold leading-normal text-center sm:text-2">
                   <motion.h1
                     initial={{ y: "5%", opacity: 0 }}

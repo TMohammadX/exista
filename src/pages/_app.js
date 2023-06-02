@@ -17,7 +17,6 @@ export default function App({ Component, pageProps }) {
       <AnimatePresence mode="wait">
         <Component {...pageProps} />
       </AnimatePresence>
-      <BackgroundMusic />
     </GlobalStateContext.Provider>
   );
 }
