@@ -198,7 +198,7 @@ export default function () {
                   <div
                     className="bg-m h-[60%] w-[20%] bg-cover bg-center cursor-pointer"
                     onClick={() => {
-                      (location.href = "mailto:bargineo@gmail.com"), "_blank";
+                      location.href = "mailto:bargineo@gmail.com";
                     }}
                   />
                   <Link
@@ -211,8 +211,7 @@ export default function () {
                   <div
                     className="bg-m h-[60%] w-[20vw] items-end self-end bg-cover bg-center cursor-pointer"
                     onClick={() => {
-                      (location.href = "https://twitter.com/TMohammadX"),
-                        (target = "_blank");
+                      location.href = "https://twitter.com/TMohammadX";
                     }}
                   />
                 </div>

@@ -31,7 +31,7 @@ const BackgroundMusic = () => {
       {/* Mute button */}
       <button
         onClick={handleMuteToggle}
-        className="fixed grid w-12 h-12 text-white bg-black rounded-full bottom-5 md:bottom-8 left-5 sm:left-5 md:left-10 lg:left-16 place-items-center sm:w-14 sm:h-14 "
+        className="fixed grid w-12 h-12 text-white bg-black rounded-full bottom-5 md:bottom-8 left-5 sm:left-5 md:left-10 lg:left-16 place-items-center sm:w-12 sm:h-12 md:w-14 md:h-14"
       >
         {isMuted ? <VscMute /> : <VscUnmute />}
       </button>

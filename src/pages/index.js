@@ -6,6 +6,7 @@ import GlobalStateContext from "../contexts/GlobalState.js";
 import { Carousel } from "react-responsive-carousel";
 import Nav from "./components/Nav.js";
 import { motion } from "framer-motion";
+import BackgroundMusic from "./components/BackgroundMusic.js";
 
 export default function Home() {
   const router = useRouter();
@@ -187,37 +188,37 @@ export default function Home() {
           </div>
           <Link
             href="/stuart"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square  hover:w-1/3 hover:h-2/5 grayscale hover:grayscale-0 box"
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square grayscale hover:grayscale-0 box"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-b hover:w-1/3 hover:min-w-[300px] hover:aspect-square hover:h-2/5 grayscale hover:grayscale-0 box"
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-b hover:aspect-square grayscale hover:grayscale-0 box"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-m hover:w-1/3 hover:min-w-[300px] hover:aspect-square  hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-m hover:aspect-square grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-r hover:w-1/3 hover:min-w-[300px] hover:aspect-square  hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-r hover:aspect-square grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-e hover:w-1/3 hover:min-w-[300px] hover:aspect-video  hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-e hover:aspect-video grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-s hover:w-1/3 hover:min-w-[300px] hover:aspect-video  hover:h-2/5 grayscale hover:grayscale-0 box "
+            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-s hover:aspect-video grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
