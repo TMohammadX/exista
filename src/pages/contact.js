@@ -187,10 +187,16 @@ export default function () {
             <div className="w-[50%] h-screen grid place-items-center">
               <div className="absolute h-screen w-50%">
                 <div className="absolute h-screen w-[100%] z-20" />
-                <div className="absolute flex p-[7%] gap-5 z-10  w-50%  animatesss">
-                  <div className="grid gap-5 tt">
+                <div className="absolute flex p-[7%] gap-5 z-20  w-50%  animatesss">
+                  <div className="grid gap-5 tt ">
                     <Image
-                      src="/img/m.jpg"
+                      src="/img/t.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
@@ -202,7 +208,25 @@ export default function () {
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
+                      src="/img/e.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/s.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/t.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
@@ -214,7 +238,25 @@ export default function () {
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
+                      src="/img/e.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/s.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/t.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
@@ -226,7 +268,25 @@ export default function () {
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
+                      src="/img/e.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/s.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/t.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
@@ -238,7 +298,25 @@ export default function () {
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
+                      src="/img/e.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/s.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/t.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
@@ -250,93 +328,45 @@ export default function () {
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
+                      src="/img/e.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                   </div>
-                  <div className="grid gap-5 tt">
+                  <div className="grid gap-5 tt ">
                     <Image
                       src="/img/m.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/b.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/t.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/s.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/e.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/t.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
@@ -348,7 +378,31 @@ export default function () {
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
+                      src="/img/s.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/e.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/b.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/s.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
@@ -360,7 +414,25 @@ export default function () {
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
+                      src="/img/e.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/s.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/t.jpg"
+                      width={300}
+                      height={500}
+                      alt="Picture of the author"
+                    />
+                    <Image
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
@@ -372,103 +444,31 @@ export default function () {
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
+                      src="/img/e.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
+                      src="/img/t.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
+                      src="/img/s.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
+                      src="/img/b.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"
                     />
                     <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
-                      width={300}
-                      height={500}
-                      alt="Picture of the author"
-                    />
-                    <Image
-                      src="/img/m.jpg"
+                      src="/img/e.jpg"
                       width={300}
                       height={500}
                       alt="Picture of the author"

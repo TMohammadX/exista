@@ -206,6 +206,11 @@ html {
 
 .tt > img {
   width: 500px;
+  filter: grayscale(100%);
+}
+
+.tt > img:hover {
+  filter: grayscale(0%);
 }
 
 .animatess {
