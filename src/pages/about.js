@@ -71,25 +71,25 @@ export default function () {
                       <div className="w-[20vw] bg-m bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-t bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-b bg-cover bg-center h-[60vh]" />
-                      <div className="w-[20vw] bg-r bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-e bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-s bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-m bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-t bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-b bg-cover bg-center h-[60vh]" />
-                      <div className="w-[20vw] bg-r bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-s bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-m bg-cover bg-center h-[60vh]" />
                     </div>
                     <div className="flex justify-around w-[50%]">
+                      <div className="w-[20vw] bg-t bg-cover bg-center h-[60vh]" />
+                      <div className="w-[20vw] bg-b bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-e bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-s bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-m bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-t bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-b bg-cover bg-center h-[60vh]" />
-                      <div className="w-[20vw] bg-r bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-s bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-m bg-cover bg-center h-[60vh]" />
                       <div className="w-[20vw] bg-t bg-cover bg-center h-[60vh]" />
-                      <div className="w-[20vw] bg-b bg-cover bg-center h-[60vh]" />
                     </div>
                   </div>
                 </div>
