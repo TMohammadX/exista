@@ -187,20 +187,23 @@ export default function Home() {
             </Carousel>
           </div>
           <Link
-            href="/stuart"
+            href="https://github.com/TMohammadX/stuart"
             className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square grayscale hover:grayscale-0 box"
+            target="_blank"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
-            href="/"
+            href="https://github.com/TMohammadX/toosi"
             className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-b hover:aspect-square grayscale hover:grayscale-0 box"
+            target="_blank"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
-            href="/"
+            href="https://github.com/TMohammadX/anhur-entreprises"
             className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-m hover:aspect-square grayscale hover:grayscale-0 box "
+            target="_blank"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
@@ -217,8 +220,9 @@ export default function Home() {
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
-            href="/"
+            href="https://github.com/TMohammadX/mobile-login"
             className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-s hover:aspect-video grayscale hover:grayscale-0 box "
+            target="_blank"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>

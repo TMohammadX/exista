@@ -36,43 +36,11 @@ export default function () {
       <div id="smooth-content">
         <Nav />
         <div className="w-screen h-screen bg-[#b8d3b9] font-Aboreto px-5 md:px-10 lg:px-16 grid">
-          <div className="flex items-center justify-center w-screen h-[100%] gap-3 px-5">
+          <div className="flex items-center justify-center w-full h-[100%] gap-3 px-5">
             <Link
               href="/stuart"
-              className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square grayscale hover:grayscale-0 box"
-            >
-              <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
-            </Link>
-            <Link
-              href="/stuart"
-              className="hidden sm:block relative w-10% transition-all duration-300 bg-center invisible bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square grayscale hover:grayscale-0 box"
-            >
-              <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
-            </Link>
-            <Link
-              href="/stuart"
-              className="hidden sm:block relative w-10% transition-all duration-300 bg-center invisible bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square grayscale hover:grayscale-0 box"
-            >
-              <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
-            </Link>
-            <Link
-              href="/stuart"
-              className="hidden sm:block relative w-10% transition-all duration-300 bg-center invisible bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square grayscale hover:grayscale-0 box"
-            >
-              <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
-            </Link>
-            <Link
-              href="/stuart"
-              className="hidden sm:block relative w-10% transition-all duration-300 bg-center invisible bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square grayscale hover:grayscale-0 box"
-            >
-              <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
-            </Link>
-            <Link
-              href="/stuart"
-              className="hidden sm:block relative w-10% transition-all duration-300 bg-center invisible bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square grayscale hover:grayscale-0 box"
-            >
-              <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
-            </Link>
+              className="relative hidden w-4/6 transition-all duration-300 bg-black bg-center bg-cover cursor-pointer sm:block h-3/5 grayscale box"
+            ></Link>
           </div>
         </div>
       </div>
