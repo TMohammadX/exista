@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 900px) {
+  .asdmusic {
+    display: none;
+  }
+}
+
 :root {
 }
 

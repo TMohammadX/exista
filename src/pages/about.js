@@ -196,7 +196,7 @@ export default function () {
               <Parallax speed={10}>
                 <div className="relative flex justify-center w-screen h-screen">
                   <div
-                    className="bg-m h-[60%] w-[20%] bg-cover bg-center cursor-pointer"
+                    className="bg-t h-[60%] w-[20%] bg-cover bg-center cursor-pointer"
                     onClick={() => {
                       location.href = "mailto:bargineo@gmail.com";
                     }}
@@ -209,7 +209,7 @@ export default function () {
                   </Link>
                   <div className="w-[10%]" />
                   <div
-                    className="bg-m h-[60%] w-[20vw] items-end self-end bg-cover bg-center cursor-pointer"
+                    className="bg-e h-[60%] w-[20vw] items-end self-end bg-cover bg-center cursor-pointer"
                     onClick={() => {
                       location.href = "https://twitter.com/TMohammadX";
                     }}
