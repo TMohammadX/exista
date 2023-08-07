@@ -65,6 +65,19 @@ export default function Home() {
           ref={el}
         >
           <Nav />
+
+          <div className=""></div>
+
+          {/* <div className="grid sm:hidden place-items-center">
+            <div className="text-center">
+              <h1 className="grid items-center pb-5 text-center place-items-center">
+                Desktop or larger screen required for project viewing.
+              </h1>
+              <Link href="/contact" className="">
+                <span className="h-[50px] w-[100px] bg-black">Contact</span>
+              </Link>
+            </div>
+      </div> */}
           <Link
             href="https://github.com/TMohammadX/stuart"
             className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square grayscale hover:grayscale-0 box"

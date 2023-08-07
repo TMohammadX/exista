@@ -215,6 +215,14 @@ html {
   filter: grayscale(100%);
 }
 
+@media (max-width: 640px) {
+  .tt > img {
+    opacity: 0%;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
 .tt > img:hover {
   filter: grayscale(0%);
 }

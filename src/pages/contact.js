@@ -128,13 +128,13 @@ export default function () {
         <div id="smooth-content" className="h-screen">
           <Layout />
           <div className="flex justify-center w-screen h-screen font-Aboreto">
-            <div className="w-[50%] h-screen grid place-items-center">
+            <div className="w-screen sm:w-[50%] h-screen grid place-items-center absolute sm:relative z-[15]">
               <form
                 onSubmit={sendEmail}
-                className="grid gap-3 w-[30vw]"
+                className="grid gap-3 place-items-center w-[100vw] sm:w-[30vw]"
                 ref={formRef}
               >
-                <div className="flex w-[30vw] gap-3">
+                <div className="flex w-[90vw] sm:w-[30vw] gap-3">
                   <input
                     type="text"
                     name="from_name"
@@ -155,7 +155,7 @@ export default function () {
                 <input
                   type="email"
                   name="from_email"
-                  className="w-[30vw] bg-transparent border border-black h-[40px] outline-none p-5 text-xs placeholder:text-gray-400 font-thin"
+                  className="w-[90vw] sm:w-[30vw] bg-transparent border border-black h-[40px] outline-none p-5 text-xs placeholder:text-gray-400 font-thin"
                   placeholder="Email"
                   value={email}
                   onChange={handleEmailChange}
@@ -163,14 +163,14 @@ export default function () {
                 <textarea
                   type="text"
                   name="message"
-                  className="w-[30vw] bg-transparent border border-black h-[25vh] resize-none outline-none pl-5 pt-3 text-xs placeholder:text-gray-400 font-thin"
+                  className="w-[90vw] sm:w-[30vw] bg-transparent border border-black h-[25vh] resize-none outline-none pl-5 pt-3 text-xs placeholder:text-gray-400 font-thin"
                   placeholder="message"
                   value={message}
                   onChange={handleMessageChange}
                 />
               </form>
             </div>
-            <h1 className=" z-30 absolute text-[4vw] 2xl:text-[4vw] font-thin text-black 2xl:text-5xl  w-max rotate-[-90deg] animatess">
+            <h1 className="hidden sm:block z-30 absolute text-[4vw] 2xl:text-[4vw] font-thin text-black 2xl:text-5xl  w-max rotate-[-90deg] animatess">
               <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
               <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
               <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
@@ -184,10 +184,10 @@ export default function () {
               <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
               <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
             </h1>
-            <div className="w-[50%] h-screen grid place-items-center">
-              <div className="absolute h-screen w-50%">
-                <div className="absolute h-screen w-[100%] z-20" />
-                <div className="absolute flex p-[7%] gap-5 z-20  w-50%  animatesss">
+            <div className="w-screen sm:w-[50%] h-screen grid place-items-center">
+              <div className="absolute h-screen w-[100vw] sm:w-50%">
+                <div className="absolute z-10 w-screen h-screen" />
+                <div className="absolute flex p-[3%] sm:p-[7%] gap-5 z-10 sm:z-20 w-[100vw] sm:w-50%  animatesss">
                   <div className="grid gap-5 tt ">
                     <Image
                       src="/img/t.jpg"
@@ -486,7 +486,7 @@ export default function () {
                 onClick={sendEmail}
                 value="Send"
                 id="submit-btn"
-                className="w-[20vh] h-[20vh] bg-black rounded-full text-white z-20 hover:bg-[#ffffff5d] hover:backdrop-blur-lg hover:text-black transition-all"
+                className="w-[12vh] h-[12vh] -mt-10 sm:w-[20vh] sm:h-[20vh] bg-black rounded-full text-white z-20 hover:bg-[#ffffff5d] hover:backdrop-blur-lg hover:text-black transition-all"
               >
                 {sending ? (
                   <span>...</span>
