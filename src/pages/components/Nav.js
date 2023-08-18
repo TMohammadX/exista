@@ -60,7 +60,7 @@ export default function () {
             className="absolute top-0 left-0 z-10 grid w-screen h-screen text-white bg-black place-items-center"
           >
             <div className="grid text-center gap-[3vh]">
-              <Link
+              {/*} <Link
                 href="/"
                 className="text-xl font-semibold"
                 onClick={handleClose}
@@ -80,7 +80,7 @@ export default function () {
                 onClick={handleClose}
               >
                 CONTACT
-              </Link>
+        </Link>*/}
             </div>
           </motion.div>
         )}
