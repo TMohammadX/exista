@@ -63,7 +63,7 @@ export default function () {
               {/*} <Link
                 href="/"
                 className="text-xl font-semibold"
-                onClick={handleClose}
+                onClick={handleClose}23
               >
                 HOME
               </Link>

@@ -86,7 +86,8 @@ export default function Home() {
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
-            href="https://github.com/TMohammadX/gfx"
+            // href="https://github.com/TMohammadX/gfx"
+            href=""
             className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-b hover:aspect-square grayscale hover:grayscale-0 box"
             target="_blank"
           >

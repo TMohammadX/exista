@@ -29,6 +29,8 @@ module.exports = {
         r: "url(/img/r.jpg)",
         e: "url(/img/e.jpg)",
         s: "url(/img/s.jpg)",
+        x: "url(/img/X-Logo.png)",
+        at: "url(/img/at.png)",
       },
       keyframes: {
         transition: {
