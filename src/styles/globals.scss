@@ -196,6 +196,15 @@ html {
   }
 }
 
+@keyframes marqueb {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -800%;
+  }
+}
+
 @keyframes marqueeee {
   0% {
     right: 0;
@@ -206,6 +215,12 @@ html {
 }
 
 .animatesss {
+  height: 900%;
+  animation: marqueb 40s linear infinite;
+
+}
+
+.animatessss {
   width: 900%;
   animation: marqueeee 50s linear infinite;
   white-space: nowrap; 

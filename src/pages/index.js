@@ -130,7 +130,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div className="grid w-screen place-items-center sms:hidden absolute bottom-0">
-          <h1 className=" sm:hidden z-30 absolute text-[15vw] font-thin text-black block rotate-[-0deg] animatesss top-[-20vh]">
+          <h1 className=" sm:hidden z-30 absolute text-[15vw] font-thin text-black block rotate-[-0deg] animatessss top-[-20vh]">
               <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
               <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
               <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
