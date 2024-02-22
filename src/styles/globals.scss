@@ -331,3 +331,11 @@ html {
   margin: 0 !important;
   opacity: 0 !important;
 }
+
+@media (max-width:710px) {
+  .main-container {
+    position: absolute;
+    height: calc(100vh - 5rem) !important;
+    top: 0;
+  }
+}

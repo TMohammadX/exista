@@ -20,7 +20,7 @@ export default function () {
   };
 
   return (
-    <nav className="absolute top-0 left-0 z-50 flex items-center justify-between w-screen px-5 h-14 font-Aboreto  px-10 h-20 lg:px-16">
+    <nav className="absolute top-0 left-0 z-50 flex items-center justify-between w-screen px-5 font-Aboreto  px-10 h-20 lg:px-16">
       <Link
         href="/"
         className="z-50 text-xl font-thin cursor-pointer mix-blend-difference "
