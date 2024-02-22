@@ -3,6 +3,7 @@ import Link from "next/link";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { AnimatePresence, motion } from "framer-motion";
 import { MdClose } from "react-icons/md";
+import {GiBranchArrow, GiTargetArrows } from 'react-icons/gi'
 
 export default function () {
   const [isToggled, setIsToggled] = useState(false);
@@ -19,7 +20,7 @@ export default function () {
   };
 
   return (
-    <nav className="absolute top-0 left-0 z-50 flex items-center justify-between w-screen px-5 h-14 font-Aboreto sm:px-5 sm:h-14 md:px-10 md:h-20 lg:px-16">
+    <nav className="absolute top-0 left-0 z-50 flex items-center justify-between w-screen px-5 h-14 font-Aboreto  px-10 h-20 lg:px-16">
       <Link
         href="/"
         className="z-50 text-xl font-thin cursor-pointer mix-blend-difference "
@@ -29,41 +30,41 @@ export default function () {
       <div className="z-50 flex gap-5">
         <Link
           href="/about"
-          className="hidden text-xs font-medium text-black sm:block mix-blend-difference "
+          className="hidden text-xs font-medium text-black sms:block mix-blend-difference "
         >
           ABOUT
         </Link>
         <Link
           href="/contact"
-          className="hidden text-xs font-medium text-black sm:block mix-blend-difference "
+          className="hidden text-xs font-medium text-black sms:block mix-blend-difference "
         >
           CONTACT
         </Link>
         <button
-          className="block text-2xl font-semibold sm:hidden"
+          className="block text-2xl font-semibold sms:hidden"
           onClick={handleToggle}
         >
           {isToggled ? (
-            <MdClose color="white" className="text-white" />
+            <GiTargetArrows color="white" className="text-white rotate-180" />
           ) : (
-            <HiOutlineMenuAlt4 color="black" />
+            <GiBranchArrow  color="black" />
           )}
         </button>
       </div>
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ y: "-100vh" }}
-            animate={{ y: 0 }}
-            exit={{ y: "-100vh" }}
+            initial={{ x: "100vh" }}
+            animate={{ x: 0 }}
+            exit={{ x: "-100vh" }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
             className="absolute top-0 left-0 z-10 grid w-screen h-screen text-white bg-black place-items-center"
           >
             <div className="grid text-center gap-[3vh]">
-              {/*} <Link
+               <Link
                 href="/"
                 className="text-xl font-semibold"
-                onClick={handleClose}23
+                onClick={handleClose}
               >
                 HOME
               </Link>
@@ -80,7 +81,7 @@ export default function () {
                 onClick={handleClose}
               >
                 CONTACT
-        </Link>*/}
+        </Link>
             </div>
           </motion.div>
         )}

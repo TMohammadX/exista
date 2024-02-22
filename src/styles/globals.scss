@@ -33,6 +33,7 @@ html {
   min-width: 100px;
 }
 
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -197,17 +198,17 @@ html {
 
 @keyframes marqueeee {
   0% {
-    bottom: 0;
+    right: 0;
   }
   100% {
-    bottom: -800%;
+    right: -800%;
   }
 }
 
 .animatesss {
-  height: 900%;
-  animation: marqueeee 40s linear infinite;
-  opacity: 0.9;
+  width: 900%;
+  animation: marqueeee 50s linear infinite;
+  white-space: nowrap; 
 }
 
 .tt > img {

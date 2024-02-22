@@ -6,6 +6,7 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+   
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -90,6 +91,9 @@ module.exports = {
         "30%": "30%",
         "40%": "40%",
         "50%": "50%",
+      },
+      screens: {
+        'sms': '710px'
       },
     },
   },

@@ -58,15 +58,15 @@ export default function Home() {
       {loading ? (
         <LoadImg />
       ) : (
+ 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="flex sm:items-center sm:justify-center w-screen h-[100%] gap-3 px-5 transition-all sm:px-40 overflow-hidden"
+          className="flex items-center justify-center w-screen h-[100%] gap-3 px-5 transition-all px-40 overflow-hidden"
           ref={el}
         >
           <Nav />
 
-          <div className=""></div>
 
           {/* <div className="grid sm:hidden place-items-center">
             <div className="text-center">
@@ -78,9 +78,10 @@ export default function Home() {
               </Link>
             </div>
       </div> */}
+          
           <Link
             href="https://github.com/TMohammadX/stuart"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square grayscale hover:grayscale-0 box"
+            className="hidden sms:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-t hover:aspect-square grayscale hover:grayscale-0 box"
             target="_blank"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
@@ -88,38 +89,66 @@ export default function Home() {
           <Link
             // href="https://github.com/TMohammadX/gfx"
             href=""
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-b hover:aspect-square grayscale hover:grayscale-0 box"
+            className="hidden sms:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-b hover:aspect-square grayscale hover:grayscale-0 box"
             target="_blank"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="https://github.com/TMohammadX/anhur-entreprises"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-m hover:aspect-square grayscale hover:grayscale-0 box "
+            className="hidden sms:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-m hover:aspect-square grayscale hover:grayscale-0 box "
             target="_blank"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-r hover:aspect-square grayscale hover:grayscale-0 box "
+            className="hidden sms:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-r hover:aspect-square grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="/"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-e hover:aspect-video grayscale hover:grayscale-0 box "
+            className="hidden sms:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-e hover:aspect-video grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
             href="https://github.com/TMohammadX/mobile-login"
-            className="hidden sm:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-s hover:aspect-video grayscale hover:grayscale-0 box "
+            className="hidden sms:block relative w-10% transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-s hover:aspect-video grayscale hover:grayscale-0 box "
             target="_blank"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
+
+          <motion.div className="grid absolute gap-y-4 gap-x-4 px sms:hidden m-0 px-5 grid-cols-3 grid-rows-2 w-screen	top-[15%]">
+            <motion.div className=" w-[100%] col-span-2 h-[20vh] bg-gray-400 rounded-ss-[50px]	rounded-ee-[50px] rounded"></motion.div>
+            <motion.div className="  w-[100%] col-span-1 h-[20vh] bg-black rounded-ss-[20%]	rounded-ee-[20%] rounded"></motion.div>
+            <motion.div className="  w-[100%] col-span-1  h-[20vh] bg-black rounded-ss-[20%]	rounded-ee-[20%] rounded"></motion.div>
+            <motion.div className="  w-full col-span-2 h-[20vh] bg-gray-400 rounded-ss-[50px]	rounded-ee-[50px] rounded"></motion.div>
+   
+          </motion.div>
+
+          <motion.div className="grid w-screen place-items-center sms:hidden absolute bottom-0">
+          <h1 className=" sm:hidden z-30 absolute text-[15vw] font-thin text-black block rotate-[-0deg] animatesss top-[-20vh]">
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+              <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
+            </h1>
+            <button className="w-[60%] h-[10vh] border-[1px] border-black rounded-[100%] mb-[13%]">CLICK</button>
+          </motion.div>
+
         </motion.div>
+        
       )}
     </div>
   );

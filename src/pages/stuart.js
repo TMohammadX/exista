@@ -41,6 +41,7 @@ export default function () {
               href="/stuart"
               className="relative hidden w-4/6 transition-all duration-300 bg-black bg-center bg-cover cursor-pointer sm:block h-3/5 grayscale box"
             ></Link>
+            
           </div>
         </div>
       </div>
