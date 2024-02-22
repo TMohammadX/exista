@@ -16,6 +16,19 @@ export default function Home() {
   const { isFirstMount, setIsFirstMount } = useContext(GlobalStateContext);
 
   useEffect(() => {
+    const handleResize = () => {
+        document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
+    };
+
+    // Add event listener when component mounts
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    // Remove event listener when component unmounts
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
     const loadGsap = async () => {
       const { gsap } = await import("gsap");
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
