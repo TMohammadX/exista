@@ -58,7 +58,7 @@ export default function () {
             animate={{ x: 0 }}
             exit={{ x: "-100vh" }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
-            className="fixed top-0 left-0 z-10 grid w-screen h-[100vh] text-white bg-black overflow-hidden"
+            className="absolute top-0 left-0 z-10 grid w-screen h-[100vh] text-white bg-black overflow-hidden"
           >
             <div className="grid justify-items-center h-[90vh] gap-[3vh] w-screen">
 
