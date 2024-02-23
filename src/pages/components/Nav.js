@@ -77,7 +77,7 @@ export default function () {
               </h1>
              
               </motion.div>
-              <a href='https://twitter.com/tmohammadx' className="w-[60%] h-[10vh] border-[1px] border-gray-500 rounded-[100%] absolute top-[60vh] grid place-items-center ">twitter</a>
+              <a href='https://twitter.com/tmohammadx' className=" justify-self-center w-[60%] h-[10vh] border-[1px] border-gray-500 rounded-[100%] absolute top-[60vh] grid place-items-center ">twitter</a>
              
               <motion.div className="grid w-screen place-items-center sms:hidden absolute bottom-0">
                 <h1 className=" sm:hidden z-30 absolute text-[15vw] font-thin text-black block rotate-[-0deg] animatessss top-[-25vh] text-white">
@@ -90,7 +90,7 @@ export default function () {
               </h1>
               </motion.div>
 
-              <a href='https://github.com/TMohammadX/' className="w-[60%] h-[10vh] border-[1px] border-gray-500 rounded-[100%] absolute top-[27vh] grid place-items-center">github</a>
+              <a href='https://github.com/TMohammadX/' className=" justify-self-center w-[60%] h-[10vh] border-[1px] border-gray-500 rounded-[100%] absolute top-[27vh] grid place-items-center">github</a>
              
               <motion.div className="grid w-screen place-items-center sms:hidden absolute bottom-0">
                 <h1 className=" sm:hidden z-30 absolute text-[15vw] font-thin text-black block rotate-[-0deg] animatesr top-[-58vh] text-white">
