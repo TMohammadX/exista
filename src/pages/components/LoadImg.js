@@ -13,7 +13,13 @@ export default function () {
     <div>
       {isVisible && (
         <motion.div
-          initial={{ width: "100vw", height: "100vh" }}
+        
+          className=""
+        >
+
+        <div class="lds-ripple"><div></div><div></div></div>
+
+          <motion.div   initial={{ width: "80vw", height: "90vh" }}
           animate={{
             zIndex: "10",
             width: "50%",
@@ -25,16 +31,18 @@ export default function () {
             duration: 5,
           }}
           onAnimationComplete={handleAnimationComplete}
-          className="absolute hidden w-2/4 -translate-x-1/2 -translate-y-1/2 bg-black h-3/5 left-1/2 top-1/2 sm:block"
-        >
+          className="absolute hidden w-2/4 -translate-x-1/2 lvid -translate-y-1/2 bg-black h-3/5 left-1/2 top-1/2 sm:block"
+          
+          >
           <video
-            className="object-cover w-full h-full grayscale"
+            className="object-cover w-full h-full grayscale "
             autoPlay
             muted
             loop
           >
             <source src="/video/ppp.mp4"></source>
           </video>
+          </motion.div>
         </motion.div>
       )}
     </div>
