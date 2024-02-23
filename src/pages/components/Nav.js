@@ -58,30 +58,55 @@ export default function () {
             animate={{ x: 0 }}
             exit={{ x: "-100vh" }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
-            className="fixed top-0 left-0 z-10 grid w-screen h-[100vh] text-white bg-black place-items-center overflow-hidden"
+            className="fixed top-0 left-0 z-10 grid w-screen h-[100vh] text-white bg-black overflow-hidden"
           >
-            <div className="grid text-center gap-[3vh]">
-               <Link
-                href="/"
-                className="text-xl font-semibold"
-                onClick={handleClose}
-              >
-                HOME
-              </Link>
-              <Link
-                href="/about"
-                className="text-xl font-semibold"
-                onClick={handleClose}
-              >
-                ABOUT
-              </Link>
-              <Link
-                href="/contact"
-                className="text-xl font-semibold"
-                onClick={handleClose}
-              >
-                CONTACT
-        </Link>
+            <div className="grid justify-items-center h-[90vh] gap-[3vh] w-screen">
+
+              {/* <motion.div className="w-[85%] p-4 h-[25vh] rounded bg-gray-500 mx-[10px] mt-[25%] css-glass">
+                <h3 className="">Note!</h3>
+
+              </motion.div> */}
+                <motion.div className="grid w-screen place-items-center sms:hidden absolute bottom-0">
+                <h1 className=" sm:hidden z-30 absolute text-[15vw] font-thin text-black block rotate-[-0deg] animatessss top-[-90vh] text-white">
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+              </h1>
+             
+              </motion.div>
+              <a href='https://twitter.com/tmohammadx' className="w-[60%] h-[10vh] border-[1px] border-gray-500 rounded-[100%] absolute top-[60vh] grid place-items-center ">twitter</a>
+             
+              <motion.div className="grid w-screen place-items-center sms:hidden absolute bottom-0">
+                <h1 className=" sm:hidden z-30 absolute text-[15vw] font-thin text-black block rotate-[-0deg] animatessss top-[-25vh] text-white">
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+              </h1>
+              </motion.div>
+
+              <a href='https://github.com/TMohammadX/' className="w-[60%] h-[10vh] border-[1px] border-gray-500 rounded-[100%] absolute top-[27vh] grid place-items-center">github</a>
+             
+              <motion.div className="grid w-screen place-items-center sms:hidden absolute bottom-0">
+                <h1 className=" sm:hidden z-30 absolute text-[15vw] font-thin text-black block rotate-[-0deg] animatesr top-[-58vh] text-white">
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+                <span className="h-[50%]"> USE DESKTOP FOR THE FULL EXPERIENCE ·</span>
+              </h1>
+              </motion.div>
+              {/* <div className="grid justify-self-start px-10">
+              <a href="/">Twitter</a>
+              <a href="/">Twitter</a>
+              <a href="/">Twitter</a> 
+              </div> */}
             </div>
           </motion.div>
         )}

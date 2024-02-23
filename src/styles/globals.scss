@@ -214,6 +214,15 @@ html {
   }
 }
 
+@keyframes marquer {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -800%;
+  }
+}
+
 .animatesss {
   height: 900%;
   animation: marqueb 40s linear infinite;
@@ -253,6 +262,11 @@ html {
   animation: marquee 20s linear infinite;
   top: 50%;
   transform: translate(0, -50%);
+}
+.animatesr {
+  width: 900%;
+  animation: marquer 50s linear infinite;
+  white-space: nowrap; 
 }
 
 @media (min-width: 1024px) {
@@ -389,4 +403,12 @@ html {
     height: 72px;
     opacity: 0;
   }
+}
+
+.css-glass{
+  background: rgba(107, 114, 128, 0.34);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.8px);
+-webkit-backdrop-filter: blur(10.8px);
 }
