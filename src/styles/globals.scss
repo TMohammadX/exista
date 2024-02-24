@@ -348,6 +348,13 @@ html {
   touch-action: none;
 }
 
+@media (min-width: 560px) {
+  .rmst {
+    touch-action: auto;
+  }
+  
+}
+
 .hallucination-effect div {
   vertical-align: top !important;
   margin: 0 !important;

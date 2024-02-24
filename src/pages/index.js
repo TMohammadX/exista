@@ -64,7 +64,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="flex items-center justify-center w-screen h-[100vh] gap-3 px-5 transition-all px-40 overflow-hidden main-container"
+          className="flex items-center justify-center w-screen h-[100vh] gap-3 px-5 transition-all px-40 overflow-hidden main-container rmst"
           ref={el}
         >
           <Nav />
@@ -123,7 +123,7 @@ export default function Home() {
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
 
-          <motion.div className="grid absolute gap-y-4 gap-x-4 px sms:hidden  m-0 px-5 grid-cols-3 grid-rows-2 w-screen	top-[15%] rmst">
+          <motion.div className="grid absolute gap-y-4 gap-x-4 px sms:hidden  m-0 px-5 grid-cols-3 grid-rows-2 w-screen	top-[15%] ">
             <motion.div className=" w-[100%] col-span-2 h-[20vh] bg-gray-400 rounded-ss-[50px]	rounded-ee-[50px] rounded"></motion.div>
             <motion.div className="  w-[100%] col-span-1 h-[20vh] bg-black rounded-ss-[20%]	rounded-ee-[20%] rounded"></motion.div>
             <motion.div className="  w-[100%] col-span-1  h-[20vh] bg-black rounded-ss-[20%]	rounded-ee-[20%] rounded"></motion.div>
@@ -146,7 +146,7 @@ export default function Home() {
               <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
               <span className="h-[50%]"> GET IN TOUCH · GET IN TOUCH ·</span>
             </h1>
-            <button className="w-[60%] h-[10vh] border-[1px] border-black rounded-[100%] mb-[10%]">CLICK</button>
+            <button className="w-[60%] h-[10vh] border-[1px] border-black rounded-[100%] mb-[15%]">CLICK</button>
           </motion.div>
 
         </motion.div>
