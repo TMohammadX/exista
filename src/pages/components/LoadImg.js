@@ -14,7 +14,7 @@ export default function () {
       {isVisible && (
         <motion.div
         
-          className="rmst"
+          className="rmst h-screen w-screen grid place-items-center"
         >
 
         <div class="lds-ripple"><div></div><div></div></div>
