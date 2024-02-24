@@ -14,7 +14,7 @@ export default function () {
       {isVisible && (
         <motion.div
         
-          className=""
+          className="rmst"
         >
 
         <div class="lds-ripple"><div></div><div></div></div>
