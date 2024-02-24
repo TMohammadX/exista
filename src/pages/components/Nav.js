@@ -52,13 +52,13 @@ export default function () {
         </button>
       </div>
       <AnimatePresence>
-        {open && (
+        {open && ( 
           <motion.div
             initial={{ x: "100vh" }}
             animate={{ x: 0 }}
             exit={{ x: "-100vh" }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
-            className="absolute top-0 left-0 z-30 grid w-screen min-h-[100vh] bg-black text-white bg-black overflow-hidden"
+            className="absolute top-0 left-0 z-30 grid w-screen min-h-[100vh] bg-black text-white bg-black overflow-hidden nav-menusr"
           >
             <div className="grid justify-items-center h-[90vh] gap-[3vh] w-screen">
 

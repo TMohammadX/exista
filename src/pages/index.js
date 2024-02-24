@@ -123,7 +123,7 @@ export default function Home() {
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
 
-          <motion.div className="grid absolute gap-y-4 gap-x-4 px sms:hidden m-0 px-5 grid-cols-3 grid-rows-2 w-screen	top-[15%]">
+          <motion.div className="grid absolute gap-y-4 gap-x-4 px sms:hidden  m-0 px-5 grid-cols-3 grid-rows-2 w-screen	top-[15%]">
             <motion.div className=" w-[100%] col-span-2 h-[20vh] bg-gray-400 rounded-ss-[50px]	rounded-ee-[50px] rounded"></motion.div>
             <motion.div className="  w-[100%] col-span-1 h-[20vh] bg-black rounded-ss-[20%]	rounded-ee-[20%] rounded"></motion.div>
             <motion.div className="  w-[100%] col-span-1  h-[20vh] bg-black rounded-ss-[20%]	rounded-ee-[20%] rounded"></motion.div>
