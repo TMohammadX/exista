@@ -378,7 +378,7 @@ html {
   position: relative;
   width: 80px;
   height: 80px;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 .lds-ripple div {
   position: absolute;
@@ -427,4 +427,8 @@ border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(10.8px);
 -webkit-backdrop-filter: blur(10.8px);
+}
+
+.about-p {
+  
 }

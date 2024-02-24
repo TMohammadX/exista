@@ -59,7 +59,7 @@ export default function () {
   return (
     <>
       <div ref={el}>
-        <div id="smooth-content" className="relative w-screen min-h-[200vh] ">
+        <div id="smooth-content" className="relative w-screen min-h-[200vh] about-p">
           <Nav />
           <Layout title="About" />
           <ParallaxProvider>
