@@ -89,9 +89,9 @@ export default function Home() {
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
-            // href="https://github.com/TMohammadX/gfx"
-            href=""
-            className="hidden sms:block relative w-[8%] transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-b hover:aspect-square grayscale hover:grayscale-0 box"
+            href="https://github.com/TMohammadX/mobile-login"
+           
+            className="hidden sms:block relative w-[8%] transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-s hover:aspect-square grayscale hover:grayscale-0 box"
             target="_blank"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
@@ -104,20 +104,20 @@ export default function Home() {
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
-            href="/"
+            href="#"
             className="hidden sms:block relative w-[8%] transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-r hover:aspect-square grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
-            href="/"
-            className="hidden sms:block relative w-[8%] transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-e hover:aspect-video grayscale hover:grayscale-0 box "
+            href="#"
+            className="hidden sms:block relative w-[8%] transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-e hover:aspect-square grayscale hover:grayscale-0 box "
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
           </Link>
           <Link
-            href="https://github.com/TMohammadX/mobile-login"
-            className="hidden sms:block relative w-[8%] transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-s hover:aspect-video grayscale hover:grayscale-0 box "
+            href="#"
+            className="hidden sms:block relative w-[8%] transition-all duration-300 bg-center bg-cover cursor-pointer h-3/5 bg-b hover:aspect-square grayscale hover:grayscale-0 box "
             target="_blank"
           >
             <span className="absolute w-px h-full mt-5 bg-gray-400 left-1/2 top-full"></span>
